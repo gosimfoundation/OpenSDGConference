@@ -1,0 +1,84 @@
+---
+// Layout component used by the pages in this project.  A layout centralizes
+// common markup such as the header and footer so that individual pages can
+// focus on their own content.  Astro uses the `slot` to inject page
+// content into the layout.
+const { title = 'Open for SDG Conference' } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <style>
+      /* Simple CSS reset */
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fdfdfd;
+      }
+      header {
+        background: #002f5f;
+        color: #fff;
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      header h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: opacity 0.2s ease;
+      }
+      nav a:hover { opacity: 0.8; }
+      main {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      footer {
+        background: #f5f5f5;
+        color: #666;
+        padding: 1rem 2rem;
+        text-align: center;
+        font-size: 0.875rem;
+      }
+      footer a {
+        color: #0066cc;
+        text-decoration: none;
+      }
+      footer a:hover { text-decoration: underline; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Open for SDG Conference</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/agenda">Agenda</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>&copy; {new Date().getFullYear()} Open for SDG Conference. Crafted with Astro.</p>
+    </footer>
+  </body>
+</html>
