@@ -1,113 +1,228 @@
 ---
-import Layout from '../layouts/Layout.astro';
+// Components
+import Layout from "layouts/Layout.astro"
+import Hero from "components/Hero.astro"
+import Intro from "components/Intro.astro"
+import Cards from "components/Cards.astro"
+import TextAndImageSimple from "components/TextAndImageSimple.astro"
+import TextAndSponsors from "components/TextAndSponsors.astro"
+import VenueInfo from "components/VenueInfo.astro"
+import FeaturedSpeakersSimple from "components/FeaturedSpeakersSimple.astro"
+
+// Images
 ---
-<Layout title="Home | Open for SDG Conference">
-  <section style="text-align:center; margin-bottom:3rem;">
-    <img src="/images/network.png" alt="Abstract network representing open‑source collaboration" style="max-width:100%; height:auto; border-radius:8px;" />
-    <h2 style="font-size:2rem; margin-top:1rem; color:#002f5f;">Accelerating the Sustainable Development Goals through Open Collaboration</h2>
-    <p style="font-size:1.125rem; margin-top:0.5rem;">
-      The <strong>Open for SDG Conference</strong> brings together United Nations leaders,
-      open‑source communities and innovators from across the globe to explore how open
-      technologies can advance the 2030 Agenda. This site provides an overview of the
-      conference objectives, sessions and key participants.
-    </p>
-  </section>
 
-  <section style="margin-bottom:3rem;">
-    <h3 style="font-size:1.75rem; color:#002f5f; margin-bottom:0.5rem;">About the UN Office for Digital & Emerging Technologies (ODET)</h3>
-    <p>
-      As of 1&nbsp;January&nbsp;2025 the United Nations transitioned the Envoy on Technology into the
-      <strong>Office for Digital and Emerging Technologies (ODET)</strong>.  The new office holds a
-      strengthened mandate to help the UN address the rapidly evolving technological landscape
-      and to support implementation of the <em>Global Digital Compact</em>【731529764474628†L51-L75】.  ODET
-      champions an inclusive, multistakeholder approach to digital governance rooted in the
-      UN Charter, human rights and the sustainable development agenda【731529764474628†L63-L75】.  Its mission
-      spans five strategic areas: advocating for digital cooperation, facilitating
-      multistakeholder dialogues, advising UN leadership on technology trends, strengthening
-      coordination across the UN system, and supporting follow‑up of the Global Digital
-      Compact【731529764474628†L68-L75】.
-    </p>
-  </section>
+<Layout
+  title="Open for SDG Conference | Accelerating SDGs through Open Collaboration"
+  description="The Open for SDG Conference brings together United Nations leaders, open-source communities and innovators to explore how open technologies can advance the 2030 Agenda for Sustainable Development."
+  navDarkMode={true}
+  navBackground="header-home"
+  pageTransitionName="Open for SDG Conference"
+>
+  <Hero
+    date="September 13, 2025"
+    location="Station F, Paris"
+    links={[
+      {
+        text: "Register Now",
+        link: "/register",
+        openInNewTab: false,
+      },
+      {
+        text: "View Agenda",
+        link: "/agenda",
+        openInNewTab: false,
+      },
+    ]}
+  />
+  
+  <div
+    class="section-wrap"
+    id="intro"
+    data-theme-section="light"
+    data-bg-section="lightgray"
+  >
+    <Intro>
+      <h1
+        class="h3 light split-words animate-read mb-4"
+        style="font-size:1.5rem; text-align: justify;"
+      >
+        The <b>Open for SDG Conference</b> brings together United Nations leaders,
+        open-source communities and innovators from across the globe to explore how open
+        technologies can advance the 2030 Agenda. Co-organized by the <b><a
+          href="https://www.un.org/en/"
+          target="_blank"
+          rel="noopener noreferrer">United Nations</a></b> and <b><a
+          href="https://gosim.org/"
+          target="_blank"
+          rel="noopener noreferrer">GOSIM</a></b>, this conference creates a unique platform
+        for dialogue between policymakers, technologists, and civil society to accelerate
+        progress toward the Sustainable Development Goals through open collaboration.
+      </h1>
+    </Intro>
+  </div>
 
-  <section style="margin-bottom:3rem; display:flex; flex-wrap:wrap; gap:1.5rem;">
-    <div style="flex:1 1 300px;">
-      <h3 style="font-size:1.75rem; color:#002f5f; margin-bottom:0.5rem;">Open Source &amp; the Sustainable Development Goals</h3>
-      <p>
-        Achieving the 17 Sustainable Development Goals requires scalable, affordable and
-        inclusive digital solutions.  Open‑source projects – ranging from software and
-        data sets to artificial intelligence models, standards and content – form the
-        backbone of what the UN calls <em>digital public goods</em>.  These shared resources
-        unlock innovation and equity by allowing anyone to build upon and localize
-        proven technologies.  The Office for Digital and Emerging Technologies notes that
-        investing in open‑source software, open data, open AI models, open standards and
-        open content is key to achieving the SDGs【628719890919091†L50-L59】.  All such digital public
-        goods must adhere to privacy and ethical standards, do no harm and remain
-        accessible to all【628719890919091†L55-L59】.
+  <Cards
+    title="Conference Themes"
+    description="Explore how open-source technologies can accelerate progress toward specific SDGs"
+    cards={[
+      {
+        title: "Open Data for the UN SDGs",
+        description:
+          "Sharing case studies on public healthcare data and brainstorming an open data initiative to support evidence-based policymaking.",
+        image: "/icons/collaboration.svg",
+      },
+      {
+        title: "Open Policy for the UN SDGs",
+        description:
+          "Discussing governance models, contribution pathways and policy considerations for UN engagement with open-source projects.",
+        image: "/icons/sovereignty.svg",
+      },
+      {
+        title: "Open Science for the UN SDGs",
+        description:
+          "Highlighting open science principles, barriers, enablers and ethical considerations for collaborative research.",
+        image: "/icons/governance.svg",
+      },
+      {
+        title: "Future AI for the UN SDGs",
+        description:
+          "Envisioning inclusive, responsible AI futures and exploring how advanced AI can serve sustainable development.",
+        image: "/icons/aimodels.svg",
+      },
+      {
+        title: "Show & Tell",
+        description:
+          "Spotlighting practical use cases and open-source projects that are actively supporting the UN SDGs.",
+        image: "/icons/whitepaper.svg",
+      },
+    ]}
+  />
+
+  <TextAndImageSimple
+    title="Open Source & the Sustainable Development Goals"
+    text="Achieving the 17 Sustainable Development Goals requires scalable, affordable and inclusive digital solutions. Open-source projects – ranging from software and data sets to artificial intelligence models, standards and content – form the backbone of what the UN calls digital public goods. These shared resources unlock innovation and equity by allowing anyone to build upon and localize proven technologies. The Office for Digital and Emerging Technologies notes that investing in open-source software, open data, open AI models, open standards and open content is key to achieving the SDGs."
+    image="/images/sdg.png"
+    imageAlt="The 17 Sustainable Development Goals"
+    ctaButton={{
+      text: "Learn More About SDGs",
+      link: "https://sdgs.un.org/goals",
+      openInNewTab: true,
+    }}
+  />
+
+  <div
+    class="section-wrap"
+    id="about-odet"
+    data-theme-section="light"
+    data-bg-section="white"
+  >
+    <Intro>
+      <h2 class="h3 light mb-3">About the UN Office for Digital & Emerging Technologies (ODET)</h2>
+      <p class="lead" style="text-align: justify;">
+        As of 1 January 2025, the United Nations transitioned the Envoy on Technology into the
+        <b>Office for Digital and Emerging Technologies (ODET)</b>. The new office holds a
+        strengthened mandate to help the UN address the rapidly evolving technological landscape
+        and to support implementation of the Global Digital Compact. ODET champions an inclusive,
+        multistakeholder approach to digital governance rooted in the UN Charter, human rights
+        and the sustainable development agenda.
       </p>
-    </div>
-    <div style="flex:1 1 300px; text-align:center;">
-      <img src="/images/sdg.png" alt="The 17 Sustainable Development Goals" style="max-width:100%; height:auto; border-radius:8px;" />
-      <small style="display:block; margin-top:0.5rem; color:#666;">The 17 Sustainable Development Goals</small>
-    </div>
-  </section>
+    </Intro>
+  </div>
 
-  <section style="margin-bottom:3rem;">
-    <h3 style="font-size:1.75rem; color:#002f5f; margin-bottom:0.5rem;">Introducing GOSIM</h3>
-    <p>
-      The <strong>Global Open‑Source Innovation Meetup (GOSIM)</strong> is a volunteer‑driven
-      platform dedicated to nurturing grassroots open‑source projects.  Born from the
-      collective vision of a global open‑source community, GOSIM provides a stage where
-      projects can shine, collaborate and evolve【246078012704320†L18-L30】.  It subscribes to
-      an open, diverse and inclusive culture【246078012704320†L24-L34】 and operates on three
-      pillars: an annual <em>GOSIM Conference</em> that dives into technology trends and
-      best practices, hands‑on <em>GOSIM Workshops</em> for hackathons and competitions,
-      and a year‑round <em>GOSIM Spotlight</em> program that supports promising projects
-      through sponsorships and grants【246078012704320†L38-L56】.
-    </p>
-  </section>
+  <FeaturedSpeakersSimple
+    title="Featured Speakers"
+    subtitle="Leading voices in open-source and sustainable development"
+    speakers={[
+      {
+        name: "Tiejun Huang",
+        role: "Chairman",
+        company: "Beijing Academy of Artificial Intelligence",
+        image: "/images/speakers/generic-profile.png",
+      },
+      {
+        name: "Mehdi Snene",
+        role: "Chief AI Officer",
+        company: "OECD and UN",
+        image: "/images/speakers/generic-profile.png",
+      },
+      {
+        name: "Gael Blondelle",
+        role: "Senior Vice President",
+        company: "Eclipse Foundation",
+        image: "/images/speakers/gael-blondelle.png",
+      },
+      {
+        name: "Matt White",
+        role: "Executive Director",
+        company: "PyTorch Foundation",
+        image: "/images/speakers/matt-white.png",
+      },
+    ]}
+  />
 
-  <section style="margin-bottom:3rem;">
-    <h3 style="font-size:1.75rem; color:#002f5f; margin-bottom:0.5rem;">Conference Format &amp; Topics</h3>
-    <p>The Open for SDG Conference is structured around thematic sessions that explore how open‑source technologies can accelerate progress toward specific sustainable development goals:</p>
-    <ul style="list-style:square inside; margin-left:1rem;">
-      <li><strong>Open Data for the UN SDGs</strong> – sharing case studies on public healthcare data and brainstorming an open data initiative.</li>
-      <li><strong>Open Policy for the UN SDGs</strong> – discussing governance models, contribution pathways and policy considerations for UN engagement with open‑source projects.</li>
-      <li><strong>Open Science for the UN SDGs</strong> – highlighting open science principles, barriers, enablers and ethical considerations for collaborative research.</li>
-      <li><strong>Future AI for the UN SDGs</strong> – envisioning inclusive, responsible AI futures and exploring how advanced AI can serve sustainable development.</li>
-      <li><strong>Show &amp; Tell</strong> – spotlighting practical use cases and open‑source projects supporting the UN SDGs.</li>
-    </ul>
-    <p>Each theme features a short keynote followed by a moderated panel discussion with experts from academia, industry and international organizations.  Please see the <a href="/agenda">Agenda</a> for timings and speaker details.</p>
-  </section>
+  <TextAndSponsors
+    title="Partner Organizations"
+    text="This conference is made possible through the collaboration of leading organizations committed to open-source innovation and sustainable development."
+    logos={[
+      {
+        image: "eclipse-foundation.png",
+        imageAlt: "Eclipse Foundation logo",
+      },
+      {
+        image: "linux-foundation-research.png",
+        imageAlt: "Linux Foundation Research logo",
+      },
+      {
+        image: "osi.png",
+        imageAlt: "Open Source Initiative logo",
+      },
+      {
+        image: "openwallet.png",
+        imageAlt: "OpenWallet Foundation logo",
+      },
+      {
+        image: "sw-heritage.png",
+        imageAlt: "Software Heritage Foundation logo",
+      },
+    ]}
+  />
 
-  <section style="margin-bottom:3rem;">
-    <h3 style="font-size:1.75rem; color:#002f5f; margin-bottom:0.5rem;">Main Attendees &amp; Contributors</h3>
-    <p>The conference brings together thought leaders and practitioners from the United Nations, academia, open‑source foundations and industry.  Confirmed contributors include:</p>
-    <ul style="list-style:square inside; margin-left:1rem;">
-      <li><strong>Tiejun Huang</strong> – Professor at Peking University and Chairman of the Beijing Academy of Artificial Intelligence.</li>
-      <li><strong>Mehdi Snene</strong> – Chief AI Officer for the OECD and the UN.</li>
-      <li><strong>Yonghua Lin</strong> – Vice President and Chief Engineer at the Beijing Academy of Artificial Intelligence.</li>
-      <li><strong>M.O. KHAH</strong> – Chair of the United Nations Data Governance Working Group.</li>
-      <li><strong>Anni Lai</strong> – Co‑Chair of the Generative AI Commons (Linux AI &amp; Data Foundation).</li>
-      <li><strong>Gael Blondelle</strong> – Senior Vice President at the Eclipse Foundation.</li>
-      <li><strong>Matt White</strong> – Executive Director of the PyTorch Foundation.</li>
-      <li><strong>Sameer Chauhan</strong> – Director of the United Nations International Computing Centre (UNICC).</li>
-      <li><strong>Hilary Carter</strong> – Senior Vice President, Linux Foundation Research.</li>
-      <li><strong>Yong Qin</strong> – Professor at Nankai University.</li>
-    </ul>
-    <p>Many additional panelists from Asia Development Bank, Mozilla, ITU, ASEAN and other institutions will join the discussions to provide regional and sectoral perspectives.</p>
-  </section>
+  <VenueInfo
+    subtitle="The Venue"
+    title="Station F - The World's Largest Startup Campus"
+    location="5 Parvis Alan Turing, 75013 Paris, France"
+    text="Join us at Station F, a vibrant innovation hub in the heart of Paris. This iconic venue brings together entrepreneurs, investors, and innovators from around the world, making it the perfect location for exploring how open-source technologies can drive sustainable development."
+    image="/images/homepage/forum-venue.jpg"
+    ctaButton={{
+      text: "Get Directions",
+      link: "https://maps.google.com/?q=Station+F+Paris",
+      openInNewTab: true,
+    }}
+  />
 
-  <section style="margin-bottom:3rem; text-align:center;">
-    <a href="/agenda" style="display:inline-block; padding:0.75rem 1.5rem; background:#002f5f; color:#fff; border-radius:4px; text-decoration:none; font-weight:600;">View the Agenda</a>
-  </section>
-
-  <section style="border-top:1px solid #eee; padding-top:1rem;">
-    <h3 style="font-size:1.25rem; color:#002f5f; margin-bottom:0.5rem;">References</h3>
-    <ol style="padding-left:1.25rem;">
-      <li><a href="【731529764474628†L51-L75】">Press release: A new UN Office for Digital and Emerging Technologies</a></li>
-      <li><a href="【628719890919091†L50-L59】">Digital Public Goods – promoting open‑source solutions for a more equitable world</a></li>
-      <li><a href="【246078012704320†L18-L30】">GOSIM introduction and mission</a></li>
-      <li><a href="【246078012704320†L38-L56】">GOSIM’s three pillars and programs</a></li>
-    </ol>
-  </section>
+  <Cards
+    title="Expected Outcomes"
+    description="Participants will contribute to developing tangible outcomes that advance the SDG agenda"
+    cards={[
+      {
+        title: "Policy Framework",
+        description:
+          "A comprehensive framework for UN engagement with open-source projects, including governance models and contribution guidelines.",
+        image: "/icons/whitepaper.svg",
+      },
+      {
+        title: "Open Data Initiative",
+        description:
+          "Launch of a collaborative open data initiative to support evidence-based policymaking for sustainable development.",
+        image: "/icons/positionpaper.svg",
+      },
+      {
+        title: "Partnership Network",
+        description:
+          "Establishment of a global network connecting UN agencies, open-source communities, and civil society organizations.",
+        image: "/icons/roadmap.svg",
+      },
+    ]}
+  />
 </Layout>

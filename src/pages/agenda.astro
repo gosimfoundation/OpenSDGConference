@@ -1,138 +1,227 @@
 ---
-import Layout from '../layouts/Layout.astro';
----
-<Layout title="Agenda | Open for SDG Conference">
-  <section style="margin-bottom:3rem;">
-    <h2 style="font-size:2rem; color:#002f5f; margin-bottom:1rem;">Conference Agenda</h2>
-    <p>The agenda below outlines the sequence of sessions for the Open for SDG Conference.  Times are approximate and shown in Pacific time (UTC−7).  Each thematic session begins with a short presentation followed by a panel discussion.</p>
-    <div style="overflow-x:auto;">
-      <table style="width:100%; border-collapse:collapse; margin-top:1rem;">
-        <thead>
-          <tr style="background:#002f5f; color:#fff;">
-            <th style="padding:0.5rem 0.75rem; text-align:left;">Time</th>
-            <th style="padding:0.5rem 0.75rem; text-align:left;">Session</th>
-            <th style="padding:0.5rem 0.75rem; text-align:left;">Description</th>
-            <th style="padding:0.5rem 0.75rem; text-align:left;">Speakers / Moderator</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Opening keynote -->
-          <tr style="background:#f5f5f5;">
-            <td style="padding:0.5rem 0.75rem;">09:00–09:15</td>
-            <td style="padding:0.5rem 0.75rem;">Opening Keynote</td>
-            <td style="padding:0.5rem 0.75rem;">Welcome speech introducing the objectives of the conference</td>
-            <td style="padding:0.5rem 0.75rem;">Tiejun Huang – Prof. Peking University &amp; Chairman of BAAI</td>
-          </tr>
-          <tr>
-            <td style="padding:0.5rem 0.75rem;">09:15–09:45</td>
-            <td style="padding:0.5rem 0.75rem;">Opening Keynote</td>
-            <td style="padding:0.5rem 0.75rem;">Keynote address on the power of open technologies for sustainable development</td>
-            <td style="padding:0.5rem 0.75rem;">Mehdi Snene – Chief AI Officer, OECD &amp; UN</td>
-          </tr>
-          <!-- Open Data session -->
-          <tr style="background:#f5f5f5;">
-            <td style="padding:0.5rem 0.75rem;">09:45–10:05</td>
-            <td style="padding:0.5rem 0.75rem;">Open Data for the SDGs</td>
-            <td style="padding:0.5rem 0.75rem;">Case study: Data for Public Healthcare – exploring how open data can support public health initiatives</td>
-            <td style="padding:0.5rem 0.75rem;">Speaker TBD (Chief Data Officer at PATH)</td>
-          </tr>
-          <tr>
-            <td style="padding:0.5rem 0.75rem;">10:05–10:50</td>
-            <td style="padding:0.5rem 0.75rem;">Open Data Panel</td>
-            <td style="padding:0.5rem 0.75rem;">
-              Panel discussion on building an open data initiative to accelerate the SDGs. Sample topics: the role of open data, identifying gaps &amp; opportunities, mobilising collaboration and establishing guiding principles.
-            </td>
-            <td style="padding:0.5rem 0.75rem;">
-              Moderator: Yonghua Lin (BAAI)<br />
-              Panelists: M.O. KHAH (UN Data Governance), Yong Qin (Nankai University) and additional guests
-            </td>
-          </tr>
-          <!-- Open Policy session -->
-          <tr style="background:#f5f5f5;">
-            <td style="padding:0.5rem 0.75rem;">10:50–11:10</td>
-            <td style="padding:0.5rem 0.75rem;">Open Policy for the SDGs</td>
-            <td style="padding:0.5rem 0.75rem;">Case study on an open‑source project aligned with the SDGs</td>
-            <td style="padding:0.5rem 0.75rem;">Speaker TBD (Asia Development Bank)</td>
-          </tr>
-          <tr>
-            <td style="padding:0.5rem 0.75rem;">11:10–11:55</td>
-            <td style="padding:0.5rem 0.75rem;">Open Policy Panel</td>
-            <td style="padding:0.5rem 0.75rem;">
-              Panel exploring how the UN can engage with open‑source communities and projects. Topics include governance models, contribution pathways, legal considerations and alignment with the SDGs.
-            </td>
-            <td style="padding:0.5rem 0.75rem;">
-              Moderator: Anni Lai (Generative AI Commons)<br />
-              Panelists: Gael Blondelle (Eclipse Foundation), Matt White (PyTorch Foundation) and others
-            </td>
-          </tr>
-          <!-- Open Science session -->
-          <tr style="background:#f5f5f5;">
-            <td style="padding:0.5rem 0.75rem;">11:55–12:15</td>
-            <td style="padding:0.5rem 0.75rem;">Open Science for the SDGs</td>
-            <td style="padding:0.5rem 0.75rem;">Presentation on OpenSeek &amp; Open Compute and their relevance to sustainable development</td>
-            <td style="padding:0.5rem 0.75rem;">Yonghua Lin – VP &amp; Chief Engineer, BAAI</td>
-          </tr>
-          <tr>
-            <td style="padding:0.5rem 0.75rem;">12:15–13:00</td>
-            <td style="padding:0.5rem 0.75rem;">Open Science Panel</td>
-            <td style="padding:0.5rem 0.75rem;">
-              Discussion on harnessing open science for the SDGs: highlighting the role of open science, identifying barriers &amp; enablers, promoting cross‑sector collaboration, addressing ethical considerations and shaping a roadmap for action.
-            </td>
-            <td style="padding:0.5rem 0.75rem;">
-              Moderator: TBD<br />
-              Panelists: Sameer Chauhan (UNICC) and experts from UNU Mexico, ITU, ASEAN and other regional organisations
-            </td>
-          </tr>
-          <!-- Future AI session -->
-          <tr style="background:#f5f5f5;">
-            <td style="padding:0.5rem 0.75rem;">13:00–13:20</td>
-            <td style="padding:0.5rem 0.75rem;">Future AI for the SDGs</td>
-            <td style="padding:0.5rem 0.75rem;">Presentation: BrainU for persons with disabilities – exploring AI innovations with social impact</td>
-            <td style="padding:0.5rem 0.75rem;">Bo Lei (BAAI / BrainCo China)</td>
-          </tr>
-          <tr>
-            <td style="padding:0.5rem 0.75rem;">13:20–14:05</td>
-            <td style="padding:0.5rem 0.75rem;">Future AI Panel</td>
-            <td style="padding:0.5rem 0.75rem;">
-              Examining the future of AI in the context of the SDGs.  Sample discussion topics: envisioning AI for sustainable development, promoting inclusive &amp; equitable AI, bridging innovation and impact, and fostering multistakeholder collaboration.
-            </td>
-            <td style="padding:0.5rem 0.75rem;">
-              Moderator: Hilary Carter (Linux Foundation Research)<br />
-              Panelists: representatives from ITU, the School of Government of South Africa, DeepSeek/Qwen/Baidu and robotics companies
-            </td>
-          </tr>
-          <!-- Show & Tell -->
-          <tr style="background:#f5f5f5;">
-            <td style="padding:0.5rem 0.75rem;">14:05–14:15</td>
-            <td style="padding:0.5rem 0.75rem;">Show &amp; Tell</td>
-            <td style="padding:0.5rem 0.75rem;">Lightning talk showcasing an open‑source project or use case for the SDGs</td>
-            <td style="padding:0.5rem 0.75rem;">Speaker TBD</td>
-          </tr>
-          <tr>
-            <td style="padding:0.5rem 0.75rem;">14:15–14:25</td>
-            <td style="padding:0.5rem 0.75rem;">Show &amp; Tell</td>
-            <td style="padding:0.5rem 0.75rem;">Lightning talk showcasing an open‑source project or use case for the SDGs</td>
-            <td style="padding:0.5rem 0.75rem;">Speaker TBD</td>
-          </tr>
-          <tr style="background:#f5f5f5;">
-            <td style="padding:0.5rem 0.75rem;">14:25–14:35</td>
-            <td style="padding:0.5rem 0.75rem;">Show &amp; Tell</td>
-            <td style="padding:0.5rem 0.75rem;">Lightning talk showcasing an open‑source project or use case for the SDGs</td>
-            <td style="padding:0.5rem 0.75rem;">Speaker TBD</td>
-          </tr>
-          <tr>
-            <td style="padding:0.5rem 0.75rem;">14:35–14:45</td>
-            <td style="padding:0.5rem 0.75rem;">Show &amp; Tell</td>
-            <td style="padding:0.5rem 0.75rem;">Lightning talk showcasing an open‑source project or use case for the SDGs</td>
-            <td style="padding:0.5rem 0.75rem;">Speaker TBD</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+// Components
+import Layout from "layouts/Layout.astro"
+import Intro from "components/Intro.astro"
+import Agenda from "components/Agenda.astro"
+import Cards from "components/Cards.astro"
+import FeaturedSpeakersSimple from "components/FeaturedSpeakersSimple.astro"
+import VenueInfo from "components/VenueInfo.astro"
 
-  <section style="border-top:1px solid #eee; padding-top:1rem;">
-    <h3 style="font-size:1.25rem; color:#002f5f; margin-bottom:0.5rem;">Notes</h3>
-    <p>All session topics and durations are proposals and may be updated.  TBD names indicate speakers to be confirmed by the organisers.  Breaks are scheduled between sessions as needed.</p>
-  </section>
+---
+
+<Layout
+  title="Agenda | Open for SDG Conference"
+  description="View the complete agenda for the Open for SDG Conference, featuring sessions on open data, policy, science, and AI for sustainable development."
+  navDarkMode={true}
+  navBackground="header-home"
+  pageTransitionName="Conference Agenda"
+>
+  <div
+    class="section-wrap"
+    id="intro"
+    data-theme-section="light"
+    data-bg-section="lightgray"
+  >
+    <Intro>
+      <h1 class="h3 light split-words animate-read mb-4" style="font-size:1.5rem; text-align: justify;">
+        The <b>Open for SDG Conference</b> on September 13, 2025, features a comprehensive full-day program bringing together
+        thought leaders, practitioners, and innovators. Each thematic session begins with expert
+        presentations followed by interactive panel discussions, fostering meaningful dialogue on
+        how open technologies can accelerate progress toward the Sustainable Development Goals.
+      </h1>
+    </Intro>
+  </div>
+
+  <Agenda
+    title="September 13, 2025 - Conference Schedule"
+    list={[
+      {
+        title: "Opening Keynote Session",
+        markdown: `
+        * **09:00–09:15:** Welcome Address by Tiejun Huang (Chairman, BAAI)
+        * **09:15–09:45:** Keynote by Mehdi Snene (Chief AI Officer, OECD & UN)
+        
+        The opening session sets the stage for a day of exploration into how open technologies can drive sustainable development globally.
+        `,
+      },
+      {
+        title: "Open Data for the SDGs",
+        markdown: `
+        * **09:45–10:05:** Case Study: Data for Public Healthcare
+        * **10:05–10:50:** Panel Discussion
+        
+        **Moderator:** Yonghua Lin (BAAI)
+        **Panelists:** M.O. KHAH (UN Data Governance), Yong Qin (Nankai University)
+        
+        Exploring how open data initiatives can accelerate progress on health-related SDGs through improved data sharing and collaboration.
+        `,
+      },
+      {
+        title: "Morning Break",
+        markdown: `
+        * **10:50–11:10:** Networking and Refreshments
+        `,
+      },
+      {
+        title: "Open Policy for the SDGs",
+        markdown: `
+        * **11:10–11:30:** Case Study: Open-Source Projects Aligned with SDGs
+        * **11:30–12:15:** Panel Discussion
+        
+        **Moderator:** Anni Lai (Generative AI Commons)
+        **Panelists:** Gael Blondelle (Eclipse Foundation), Matt White (PyTorch Foundation)
+        
+        Discussing governance models, contribution pathways, and policy frameworks for UN engagement with open-source communities.
+        `,
+      },
+      {
+        title: "Lunch Break",
+        markdown: `
+        * **12:15–13:30:** Lunch and Networking
+        `,
+      },
+      {
+        title: "Open Science for the SDGs",
+        markdown: `
+        * **13:30–13:50:** Presentation on OpenSeek & Open Compute
+        * **13:50–14:35:** Panel Discussion
+        
+        **Speaker:** Yonghua Lin (VP & Chief Engineer, BAAI)
+        **Panelists:** Sameer Chauhan (UNICC), representatives from UNU Mexico, ITU, ASEAN
+        
+        Highlighting open science principles, identifying barriers and enablers, and shaping a roadmap for collaborative research.
+        `,
+      },
+      {
+        title: "Future AI for the SDGs",
+        markdown: `
+        * **14:35–14:55:** Presentation: BrainU for Persons with Disabilities
+        * **14:55–15:40:** Panel Discussion
+        
+        **Speaker:** Bo Lei (BAAI / BrainCo China)
+        **Moderator:** Hilary Carter (Linux Foundation Research)
+        **Panelists:** Representatives from ITU, School of Government of South Africa, DeepSeek/Qwen/Baidu
+        
+        Envisioning how AI innovations can create inclusive solutions for sustainable development challenges.
+        `,
+      },
+      {
+        title: "Afternoon Break",
+        markdown: `
+        * **15:40–16:00:** Networking and Refreshments
+        `,
+      },
+      {
+        title: "Show & Tell Sessions",
+        markdown: `
+        * **16:00–16:10:** Lightning Talk 1: Open-Source Healthcare Solutions
+        * **16:10–16:20:** Lightning Talk 2: Educational Technology for SDG 4
+        * **16:20–16:30:** Lightning Talk 3: Climate Data Platforms
+        * **16:30–16:40:** Lightning Talk 4: Financial Inclusion Tools
+        
+        Showcasing practical open-source projects and use cases that are actively supporting various SDGs.
+        `,
+      },
+      {
+        title: "Closing Session",
+        markdown: `
+        * **16:40–17:10:** Synthesis and Key Takeaways
+        * **17:10–17:30:** Call to Action and Next Steps
+        
+        Summarizing insights from the conference and outlining concrete actions for advancing open collaboration for the SDGs.
+        `,
+      },
+    ]}
+  />
+
+  <Cards
+    title="Session Formats"
+    description="Each session is designed to maximize engagement and knowledge sharing"
+    cards={[
+      {
+        title: "Keynote Presentations",
+        description:
+          "20-30 minute talks by leading experts setting the context for each thematic area",
+        image: "/icons/whitepaper.svg",
+      },
+      {
+        title: "Panel Discussions",
+        description:
+          "45-minute moderated discussions bringing diverse perspectives on critical topics",
+        image: "/icons/collaboration.svg",
+      },
+      {
+        title: "Lightning Talks",
+        description:
+          "10-minute presentations showcasing real-world applications and success stories",
+        image: "/icons/aimodels.svg",
+      },
+      {
+        title: "Networking Breaks",
+        description:
+          "Structured opportunities for participants to connect and explore collaborations",
+        image: "/icons/networking.svg",
+      },
+    ]}
+  />
+
+  <FeaturedSpeakersSimple
+    title="Keynote Speakers"
+    subtitle="Leading voices shaping the future of open collaboration for sustainable development"
+    speakers={[
+      {
+        name: "Tiejun Huang",
+        role: "Chairman",
+        company: "Beijing Academy of Artificial Intelligence",
+        image: "/images/speakers/generic-profile.png",
+      },
+      {
+        name: "Mehdi Snene",
+        role: "Chief AI Officer",
+        company: "OECD and UN",
+        image: "/images/speakers/generic-profile.png",
+      },
+      {
+        name: "Yonghua Lin",
+        role: "VP & Chief Engineer",
+        company: "Beijing Academy of Artificial Intelligence",
+        image: "/images/speakers/yonghua-lin.png",
+      },
+      {
+        name: "Hilary Carter",
+        role: "Senior Vice President",
+        company: "Linux Foundation Research",
+        image: "/images/speakers/generic-profile.png",
+      },
+    ]}
+  />
+
+  <VenueInfo
+    subtitle="Conference Venue"
+    title="Station F - Paris"
+    location="5 Parvis Alan Turing, 75013 Paris, France"
+    text="Join us at Station F, Europe's largest startup campus. This state-of-the-art facility provides the perfect environment for innovation, collaboration, and meaningful dialogue about the future of open technologies for sustainable development."
+    image="/images/homepage/forum-venue.jpg"
+    ctaButton={{
+      text: "View Venue Details",
+      link: "https://stationf.co/",
+      openInNewTab: true,
+    }}
+  />
+
+  <div
+    class="section-wrap"
+    id="register-cta"
+    data-theme-section="dark"
+    data-bg-section="dark"
+  >
+    <Intro>
+      <h2 class="h3 light mb-3">Ready to Join Us?</h2>
+      <p class="lead mb-4">
+        Space is limited for this exclusive gathering of open-source and sustainability leaders.
+        Register now to secure your place at the Open for SDG Conference.
+      </p>
+      <a href="/register" class="btn primary xl btn-hover">Register Now</a>
+    </Intro>
+  </div>
 </Layout>

@@ -1,14 +1,16 @@
 {
   "name": "open-for-sdg-conference",
-  "version": "1.0.0",
   "type": "module",
-  "private": true,
+  "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.0.0"
+    "@astrojs/sitemap": "^3.2.1",
+    "astro": "^5.5.2",
+    "sass": "^1.85.1"
   }
 }

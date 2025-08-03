@@ -1,9 +1,14 @@
-import { defineConfig } from "astro/config";
+// @ts-check
+import { defineConfig } from 'astro/config';
 
-// Basic Astro configuration. This file tells Astro where your pages and public
-// assets live. The `site` option is purely informational; it helps Astro
-// generate absolute URLs when building the site.
+import sitemap from '@astrojs/sitemap';
 
+// https://astro.build/config
 export default defineConfig({
-  site: "https://example.com", // update this when deploying
+  integrations: [sitemap()],
+  site: "https://testnew.gosim.org/",
+  redirects: {
+    '/schedule': '/agenda',
+    '/schedule/': '/agenda/',
+  },
 });
