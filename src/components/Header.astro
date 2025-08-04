@@ -109,13 +109,19 @@ const slug = Astro.url.pathname
               </li>
             ))
           }
+          <li
+            class="link link-hover"
+            data-barba-update
+            data-link-status="not-active"
+            data-has-sublinks="false"
+            data-sublinks="[]"
+          >
+            <a class="link-click" href={langSwitchLink}>
+              <span>{langSwitchText}</span>
+            </a>
+          </li>
         </ul>
       </nav>
-      <div class="box-row" style="padding-top: 20px;">
-        <a href={langSwitchLink} class="btn light btn-hover">
-          {langSwitchText}
-        </a>
-      </div>
       <div class="box-row box-row-btn">
         <Button
           text="Get Tickets"
@@ -203,13 +209,22 @@ const slug = Astro.url.pathname
               </li>
             ))
           }
+          <li
+            class="link link-hover"
+            style="position: relative;"
+            data-barba-update
+            data-link-status="not-active"
+            data-has-sublinks="false"
+            data-sublinks="[]"
+          >
+            <a class="link-click" href={langSwitchLink}>
+              <span>{langSwitchText}</span>
+            </a>
+          </li>
         </ul>
       </nav>
 
-      <div style="padding-top: 40px; display: flex; gap: 1rem; align-items: center;">
-        <a href={langSwitchLink} class="btn light btn-hover" style="padding: 0.5rem 1rem;">
-          {langSwitchText}
-        </a>
+      <div style="padding-top: 40px;">
         <Button
           text="Get Tickets"
           link="https://www.eventbrite.com/e/gosim-ai-paris-tickets-1265928669729?aff=oddtdtcreator"
