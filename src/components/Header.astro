@@ -52,9 +52,9 @@ const slug = Astro.url.pathname
 
   <div class="floating-ticket-button">
     <Button
-      text="Get Tickets"
-      link="https://www.eventbrite.com/e/gosim-ai-paris-tickets-1265928669729?aff=oddtdtcreator"
-      openInNewTab
+      text={isChinesePage ? "立即注册" : "Register Now"}
+      link={isChinesePage ? "/cn/register" : "/en/register"}
+      openInNewTab={false}
       class="btn primary btn-floating btn-hover"
     />
   </div>
@@ -118,9 +118,9 @@ const slug = Astro.url.pathname
           </a>
         </div>
         <Button
-          text="Get Tickets"
-          link="https://www.eventbrite.com/e/gosim-ai-paris-tickets-1265928669729?aff=oddtdtcreator"
-          openInNewTab
+          text={isChinesePage ? "立即注册" : "Register Now"}
+          link={isChinesePage ? "/cn/register" : "/en/register"}
+          openInNewTab={false}
           class="btn primary xl btn-hover"
         />
       </div>
@@ -213,9 +213,9 @@ const slug = Astro.url.pathname
           </a>
         </div>
         <Button
-          text="Get Tickets"
-          link="https://www.eventbrite.com/e/gosim-ai-paris-tickets-1265928669729?aff=oddtdtcreator"
-          openInNewTab
+          text={isChinesePage ? "立即注册" : "Register Now"}
+          link={isChinesePage ? "/cn/register" : "/en/register"}
+          openInNewTab={false}
           class="btn outline btn-hover"
         />
       </div>

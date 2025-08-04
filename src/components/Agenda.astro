@@ -16,14 +16,15 @@ const { title, list } = Astro.props;
 const processedList = list?.map((item) => ({
   ...item,
   htmlContent: item.markdown
-    ? item.markdown
+    ? '<p>' + item.markdown
+        .trim()
         .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
         .replace(/\*(.+?)\*(?!\*)/g, "<em>$1</em>")
         .replace(/### (.+)/g, "<h3>$1</h3>")
-        .replace(/\* (.+)/g, "<li>$1</li>")
-        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+        .replace(/^\* (.+)$/gm, "<li>$1</li>")
+        .replace(/(<li>.*<\/li>\n?)+/g, (match) => `<ul>${match}</ul>`)
         .replace(/\n\n/g, "</p><p>")
-        .replace(/(<li>.*<\/li>)/g, "<ul>$1</ul>")
+        .replace(/\n/g, "<br/>") + '</p>'
     : null,
 }));
 ---
@@ -54,9 +55,10 @@ const processedList = list?.map((item) => ({
                 <div class="top" data-accordion-toggle>
                   <div class="left">
                     <div class="timeslot">
-                      <p class="h5">{(i + 1).toString().padStart(3, "0")}</p>
+                      <p class="timedate">Sept 13</p>
+                      <p>{loop.title.split(' | ')[0]}</p>
                     </div>
-                    <h3 class="h4">{loop.title}</h3>
+                    <h3 class="h4">{loop.title.split(' | ')[1] || loop.title}</h3>
                   </div>
                   <div class="plus">
                     <div class="plus-fill" />
