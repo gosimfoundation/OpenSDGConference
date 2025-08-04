@@ -3,30 +3,58 @@
 import Button from "components/Button.astro"
 import Logo from "./Logo.astro"
 
-const firstColumnLinks = [
+// Detect current language from URL
+const pathname = Astro.url.pathname;
+const isChinesePage = pathname.startsWith('/cn/');
+const langPrefix = isChinesePage ? '/cn' : '/en';
+
+const firstColumnLinks = isChinesePage ? [
+  {
+    text: "首页",
+    link: "/cn/",
+  },
+  {
+    text: "议程",
+    link: "/cn/agenda/",
+  },
+  {
+    text: "演讲嘉宾",
+    link: "/cn/speakers/",
+  },
+  {
+    text: "会议地点",
+    link: "/cn/#venue",
+  },
+] : [
   {
     text: "Home",
-    link: "/",
+    link: "/en/",
   },
   {
     text: "Schedule",
-    link: "/agenda/",
+    link: "/en/agenda/",
   },
   {
     text: "Speakers",
-    link: "/speakers/",
+    link: "/en/speakers/",
   },
   {
     text: "Conference Venue",
-    link: "/#venue",
+    link: "/en/#venue",
   },
-  // {
-  //   text: "FAQ",
-  //   link: "/faq/",
-  // },
-]
+];
 
-const secondColumnLinks = [
+const secondColumnLinks = isChinesePage ? [
+  {
+    text: "关于GOSIM",
+    link: "https://gosim.org",
+    openInNewTab: true,
+  },
+  {
+    text: "开源AI战略论坛",
+    link: "/cn/os-ai-strategy-forum/",
+  },
+] : [
   {
     text: "About GOSIM",
     link: "https://gosim.org",
@@ -34,13 +62,9 @@ const secondColumnLinks = [
   },
   {
     text: "Open-Source AI Strategy Forum",
-    link: "/os-ai-strategy-forum/",
+    link: "/en/os-ai-strategy-forum/",
   },
-  // {
-  //   text: "Our Volunteers",
-  //   link: "/volunteers/",
-  // },
-]
+];
 
 const slug = Astro.url.pathname
 ---
@@ -50,7 +74,7 @@ const slug = Astro.url.pathname
     <div class="row row-base">
       <div class="col col-logo-gosim">
         <div class="logo">
-          <a href="/" aria-label="Go to homepage" class="logo-click">
+          <a href={langPrefix + '/'} aria-label="Go to homepage" class="logo-click">
             <Logo />
           </a>
         </div>
@@ -232,13 +256,13 @@ const slug = Astro.url.pathname
 
       <div class="col col-dev-credits">
         <div class="link link-hover">
-          <a class="link-click" href="/code-of-conduct/">
-            <span>Code of Conduct</span>
+          <a class="link-click" href={`${langPrefix}/code-of-conduct/`}>
+            <span>{isChinesePage ? '行为准则' : 'Code of Conduct'}</span>
           </a>
         </div>
         <div class="link link-hover">
-          <a class="link-click" href="/privacy/">
-            <span>Privacy</span>
+          <a class="link-click" href={`${langPrefix}/privacy/`}>
+            <span>{isChinesePage ? '隐私政策' : 'Privacy'}</span>
           </a>
         </div>
       </div>
