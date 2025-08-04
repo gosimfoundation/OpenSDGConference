@@ -21,7 +21,7 @@ interface Props {
 }
 
 // Import all sponsors
-const images = import.meta.glob<{ default: ImageMetadata }>('images/sponsors/*.{jpeg,jpg,png,gif}');
+const images = import.meta.glob<{ default: ImageMetadata }>('images/sponsors/*.{jpeg,jpg,png,gif,svg}');
 
 const { title, text, logos, ctaButton } = Astro.props;
 ---
@@ -58,7 +58,7 @@ const { title, text, logos, ctaButton } = Astro.props;
                 <div class="logo-tiles">
                     {logos?.map((loop) => (
                         <div class="single-logo-tile">
-                            <div class="boxed-logo xl">
+                            <div class={`boxed-logo xl ${loop.image === 'baai-logo-black.svg' ? 'baai-logo' : ''}`}>
                                 {loop?.image &&
                                     <Picture
                                         src={images[`/public/images/sponsors/${loop.image}`]()}
@@ -76,3 +76,9 @@ const { title, text, logos, ctaButton } = Astro.props;
         </div>
     </div>
 </section>
+
+<style>
+    .baai-logo {
+        padding: 10px;
+    }
+</style>

@@ -28,22 +28,30 @@ const { date, location, links } = Astro.props;
 
     <div class="container">
         <div class="row">
-            <div class="col">
-                <div class="hero-title">
-                    <h1 class="display-title">Open for SDG Conference</h1>
+            <div class="col" style="text-align: left; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                <div class="hero-content-top">
+                    <div class="hero-title">
+                        <h1 class="display-title">Open for SDG Conference</h1>
+                    </div>
+
+                    <div class="event-facts" style="text-align: left;">
+                        {date &&
+                            <p>{date}</p>
+                        }
+
+                        {location &&
+                            <p>{location}</p>
+                        }
+                    </div>
+                    
+                    <div class="organizer-logos">
+                        <img src="/images/sponsors/ODET_color.svg" alt="UN ODET" class="org-logo" />
+                        <img src="/images/logo.svg" alt="GOSIM" class="org-logo gosim-logo" />
+                        <img src="/images/sponsors/baai.png" alt="BAAI" class="org-logo baai-bg baai-logo" />
+                    </div>
                 </div>
 
-                <div class="event-facts">
-                    {date &&
-                        <p>{date}</p>
-                    }
-
-                    {location &&
-                        <p>{location}</p>
-                    }
-                </div>
-
-                <div class="btn-home-wrap">
+                <div class="btn-home-wrap" style="margin-top: auto; padding-bottom: 2rem;">
                     {links?.map((loop) => (
                         <Button
                             text={loop.text}
@@ -59,15 +67,35 @@ const { date, location, links } = Astro.props;
 </section>
 
 <style>
+    .section-home-header .col {
+        justify-content: space-between !important;
+        padding-top: 6rem;
+        align-items: flex-start !important;
+        min-height: calc(100vh - 6rem);
+    }
+
     .hero-title {
         margin-bottom: 2rem;
+        text-align: left;
+    }
+
+    .section-home-header .event-facts {
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        flex-direction: column !important;
+        bottom: auto !important;
+        max-width: none !important;
+    }
+
+    .section-home-header .event-facts p {
+        text-align: left !important;
     }
 
     .display-title {
-        font-size: clamp(2.5rem, 6vw, 5rem);
+        font-size: clamp(1.5rem, 4vw, 3rem);
         font-weight: 700;
         color: white;
-        text-align: center;
+        text-align: left;
         line-height: 1.1;
         margin: 0;
         text-transform: uppercase;
@@ -75,9 +103,52 @@ const { date, location, links } = Astro.props;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
 
+    .organizer-logos {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        margin-top: 4rem;
+    }
+
+    .org-logo {
+        height: 40px;
+        width: auto;
+        object-fit: contain;
+    }
+
+    .baai-bg {
+        background-color: transparent;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .gosim-logo {
+        height: 30px;
+    }
+    
+    .baai-logo {
+        height: 80px;
+    }
+
     @media (max-width: 768px) {
         .display-title {
-            font-size: clamp(2rem, 8vw, 3rem);
+            font-size: clamp(1.25rem, 6vw, 2rem);
+        }
+        
+        .organizer-logos {
+            gap: 1rem;
+        }
+        
+        .org-logo {
+            height: 30px;
+        }
+        
+        .gosim-logo {
+            height: 24px;
+        }
+        
+        .baai-logo {
+            height: 60px;
         }
     }
 </style>
