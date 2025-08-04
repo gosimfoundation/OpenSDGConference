@@ -1,0 +1,229 @@
+---
+// Components
+import Layout from "layouts/Layout.astro"
+import Hero from "components/Hero.astro"
+import Intro from "components/Intro.astro"
+import Cards from "components/Cards.astro"
+import TextAndImageSimple from "components/TextAndImageSimple.astro"
+import TextAndSponsors from "components/TextAndSponsors.astro"
+import VenueInfo from "components/VenueInfo.astro"
+import FeaturedSpeakersSimple from "components/FeaturedSpeakersSimple.astro"
+
+// Images
+---
+
+<Layout
+  title="开放促进可持续发展目标大会 | 通过开放协作加速实现可持续发展目标"
+  description="开放促进可持续发展目标大会汇聚联合国领导人、开源社区和创新者，共同探讨开放技术如何推进2030年可持续发展议程。"
+  navDarkMode={true}
+  navBackground="header-home"
+  pageTransitionName="开放促进可持续发展目标大会"
+>
+  <Hero
+    date="2025年9月13日"
+    location="杭州"
+    links={[
+      {
+        text: "立即注册",
+        link: "/cn/register",
+        openInNewTab: false,
+      },
+      {
+        text: "查看议程",
+        link: "/cn/agenda",
+        openInNewTab: false,
+      },
+    ]}
+  />
+  
+  <div
+    class="section-wrap"
+    id="intro"
+    data-theme-section="light"
+    data-bg-section="lightgray"
+  >
+    <Intro>
+      <h1
+        class="h3 light split-words animate-read mb-4"
+        style="font-size:1.5rem; text-align: justify;"
+      >
+        <b>开放促进可持续发展目标大会</b>汇聚联合国领导人、开源社区和全球创新者，
+        共同探讨开放技术如何推进2030年议程。由<b><a
+          href="https://www.un.org/zh/"
+          target="_blank"
+          rel="noopener noreferrer">联合国</a></b>和<b><a
+          href="https://gosim.org/"
+          target="_blank"
+          rel="noopener noreferrer">GOSIM</a></b>联合主办，本次大会为政策制定者、
+        技术专家和民间社会组织搭建独特的对话平台，通过开放协作加速实现可持续发展目标。
+      </h1>
+    </Intro>
+  </div>
+
+  <Cards
+    title="大会主题"
+    description="探索开源技术如何加速实现特定的可持续发展目标"
+    cards={[
+      {
+        title: "开放数据促进联合国可持续发展目标",
+        description:
+          "分享公共医疗数据案例研究，并讨论开放数据倡议以支持循证决策。",
+        image: "/icons/collaboration.svg",
+      },
+      {
+        title: "开放政策促进联合国可持续发展目标",
+        description:
+          "讨论治理模式、贡献路径以及联合国参与开源项目的政策考虑。",
+        image: "/icons/sovereignty.svg",
+      },
+      {
+        title: "开放科学促进联合国可持续发展目标",
+        description:
+          "强调开放科学原则、障碍、推动因素以及协作研究的伦理考虑。",
+        image: "/icons/governance.svg",
+      },
+      {
+        title: "未来人工智能促进联合国可持续发展目标",
+        description:
+          "展望包容、负责任的人工智能未来，探索先进人工智能如何服务可持续发展。",
+        image: "/icons/aimodels.svg",
+      },
+      {
+        title: "展示与分享",
+        description:
+          "展示积极支持联合国可持续发展目标的实际用例和开源项目。",
+        image: "/icons/whitepaper.svg",
+      },
+    ]}
+  />
+
+  <TextAndImageSimple
+    title="开源与可持续发展目标"
+    text="实现17个可持续发展目标需要可扩展、可负担和包容的数字解决方案。开源项目——从软件和数据集到人工智能模型、标准和内容——构成了联合国所称的数字公共产品的基础。这些共享资源通过允许任何人在已验证技术的基础上构建和本地化，从而解锁创新和公平。数字和新兴技术办公室指出，投资开源软件、开放数据、开放人工智能模型、开放标准和开放内容是实现可持续发展目标的关键。"
+    image="/images/sdg.png"
+    imageAlt="17个可持续发展目标"
+    ctaButton={{
+      text: "了解更多关于可持续发展目标",
+      link: "https://sdgs.un.org/zh/goals",
+      openInNewTab: true,
+    }}
+  />
+
+  <div
+    class="section-wrap"
+    id="about-odet"
+    data-theme-section="light"
+    data-bg-section="white"
+  >
+    <Intro>
+      <h2 class="h3 light mb-3">关于联合国数字和新兴技术办公室 (ODET)</h2>
+      <p class="lead" style="text-align: justify;">
+        自2025年1月1日起，联合国将技术特使转型为
+        <b>数字和新兴技术办公室 (ODET)</b>。新办公室拥有更强的授权，
+        帮助联合国应对快速发展的技术格局，支持实施全球数字契约。
+        ODET倡导基于联合国宪章、人权和可持续发展议程的包容性、
+        多利益相关方数字治理方法。
+      </p>
+    </Intro>
+  </div>
+
+  <FeaturedSpeakersSimple
+    title="特邀演讲嘉宾"
+    subtitle="开源和可持续发展领域的领军人物"
+    speakers={[
+      {
+        name: "黄铁军",
+        role: "理事长",
+        company: "北京智源人工智能研究院",
+        image: "/images/speakers/generic-profile.png",
+      },
+      {
+        name: "Mehdi Snene",
+        role: "首席人工智能官",
+        company: "经合组织和联合国",
+        image: "/images/speakers/generic-profile.png",
+      },
+      {
+        name: "Gael Blondelle",
+        role: "高级副总裁",
+        company: "Eclipse基金会",
+        image: "/images/speakers/gael-blondelle.png",
+      },
+      {
+        name: "Matt White",
+        role: "执行董事",
+        company: "PyTorch基金会",
+        image: "/images/speakers/matt-white.png",
+      },
+    ]}
+  />
+
+  <TextAndSponsors
+    title="合作伙伴组织"
+    text="本次大会得到了致力于开源创新和可持续发展的领先组织的共同支持。"
+    logos={[
+      {
+        image: "baai-logo-black.svg",
+        imageAlt: "北京智源人工智能研究院标志",
+      },
+      {
+        image: "eclipse-foundation.png",
+        imageAlt: "Eclipse基金会标志",
+      },
+      {
+        image: "linux-foundation-research.png",
+        imageAlt: "Linux基金会研究标志",
+      },
+      {
+        image: "osi.png",
+        imageAlt: "开源倡议组织标志",
+      },
+      {
+        image: "openwallet.png",
+        imageAlt: "OpenWallet基金会标志",
+      },
+      {
+        image: "sw-heritage.png",
+        imageAlt: "软件遗产基金会标志",
+      },
+    ]}
+  />
+
+  <VenueInfo
+    subtitle="会议地点"
+    title="杭州创新中心"
+    location="中国杭州"
+    text="加入我们在杭州市中心这个充满活力的创新中心。这个标志性的场地汇聚了来自世界各地的企业家、投资者和创新者，是探索开源技术如何推动可持续发展的理想场所。"
+    image="/images/homepage/baijing-hangjue.jpg"
+    ctaButton={{
+      text: "获取路线",
+      link: "https://maps.google.com/?q=杭州",
+      openInNewTab: true,
+    }}
+  />
+
+  <Cards
+    title="预期成果"
+    description="参与者将为推进可持续发展目标议程做出切实贡献"
+    cards={[
+      {
+        title: "政策框架",
+        description:
+          "制定联合国参与开源项目的综合框架，包括治理模式和贡献指南。",
+        image: "/icons/whitepaper.svg",
+      },
+      {
+        title: "开放数据倡议",
+        description:
+          "启动协作开放数据倡议，支持可持续发展的循证决策。",
+        image: "/icons/positionpaper.svg",
+      },
+      {
+        title: "伙伴关系网络",
+        description:
+          "建立连接联合国机构、开源社区和民间社会组织的全球网络。",
+        image: "/icons/roadmap.svg",
+      },
+    ]}
+  />
+</Layout>

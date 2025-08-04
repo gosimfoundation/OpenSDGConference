@@ -9,8 +9,17 @@ export default defineConfig({
   site: "https://gosimfoundation.github.io",
   // Only use base path when building for GitHub Pages
   base: process.env.GITHUB_PAGES === 'true' ? "/OpenSDGConference" : "/",
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "cn"],
+    routing: {
+      prefixDefaultLocale: true
+    }
+  },
   redirects: {
-    '/schedule': '/agenda',
-    '/schedule/': '/agenda/',
+    '/schedule': '/en/agenda',
+    '/schedule/': '/en/agenda/',
+    '/agenda': '/en/agenda',
+    '/agenda/': '/en/agenda/',
   },
 });

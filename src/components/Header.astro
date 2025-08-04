@@ -4,24 +4,42 @@ import Button from "components/Button.astro"
 import Logo from "./Logo.astro"
 import NotificationBar from "components/NotificationBar.astro"
 
-const links = [
+// Detect current language from URL
+const pathname = Astro.url.pathname;
+const isChinesePage = pathname.startsWith('/cn/');
+const langPrefix = isChinesePage ? '/cn' : '/en';
+
+const links = isChinesePage ? [
+  {
+    text: "首页",
+    link: "/cn/",
+  },
+  {
+    text: "议程",
+    link: "/cn/agenda/",
+  },
+  {
+    text: "演讲嘉宾",
+    link: "/cn/speakers/",
+  },
+] : [
   {
     text: "Home",
-    link: "/",
+    link: "/en/",
   },
   {
     text: "Schedule",
-    link: "/agenda/",
+    link: "/en/agenda/",
   },
   {
     text: "Speakers",
-    link: "/speakers/",
+    link: "/en/speakers/",
   },
-  // {
-  //   text: "FAQ",
-  //   link: "/faq/",
-  // },
-]
+];
+
+// Language switcher link
+const langSwitchLink = isChinesePage ? '/en/' : '/cn/';
+const langSwitchText = isChinesePage ? 'EN' : '中文';
 
 const slug = Astro.url.pathname
 ---
@@ -93,6 +111,11 @@ const slug = Astro.url.pathname
           }
         </ul>
       </nav>
+      <div class="box-row" style="padding-top: 20px;">
+        <a href={langSwitchLink} class="btn light btn-hover">
+          {langSwitchText}
+        </a>
+      </div>
       <div class="box-row box-row-btn">
         <Button
           text="Get Tickets"
@@ -183,7 +206,10 @@ const slug = Astro.url.pathname
         </ul>
       </nav>
 
-      <div style="padding-top: 40px;">
+      <div style="padding-top: 40px; display: flex; gap: 1rem; align-items: center;">
+        <a href={langSwitchLink} class="btn light btn-hover" style="padding: 0.5rem 1rem;">
+          {langSwitchText}
+        </a>
         <Button
           text="Get Tickets"
           link="https://www.eventbrite.com/e/gosim-ai-paris-tickets-1265928669729?aff=oddtdtcreator"
