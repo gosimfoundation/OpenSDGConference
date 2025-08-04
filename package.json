@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "build:gh-pages": "cross-env GITHUB_PAGES=true astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -12,5 +13,8 @@
     "@astrojs/sitemap": "^3.2.1",
     "astro": "^5.5.2",
     "sass": "^1.85.1"
+  },
+  "devDependencies": {
+    "cross-env": "^10.0.0"
   }
 }

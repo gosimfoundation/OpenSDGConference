@@ -7,7 +7,8 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   integrations: [sitemap()],
   site: "https://gosimfoundation.github.io",
-  base: "/OpenSDGConference",
+  // Only use base path when building for GitHub Pages
+  base: process.env.GITHUB_PAGES === 'true' ? "/OpenSDGConference" : "/",
   redirects: {
     '/schedule': '/agenda',
     '/schedule/': '/agenda/',
