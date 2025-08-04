@@ -21,13 +21,8 @@ const { date, location, links } = Astro.props;
     data-bg-section="header-home"
 >
 
-    <div class="overlay overlay-background overlay-background-video">
-        <div class="styled-video playpause overlay">
-            <video class="overlay" preload="auto" autoplay loop muted webkit-playsinline playsinline poster="/videos/gosim-paris-compressed.webp">
-                <source src="/videos/gosim-paris-compressed.webm" type="video/webm">
-                <source src="/videos/gosim-paris-compressed.mp4" type="video/mp4">
-            </video>
-        </div>
+    <div class="overlay overlay-background overlay-background-image">
+        <img class="overlay" src="/images/homepage/un-sdg.jpg" alt="UN Sustainable Development Goals" loading="eager" />
         <div class="overlay overlay-gradient-v2" />
     </div>
 
