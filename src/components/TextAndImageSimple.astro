@@ -7,6 +7,7 @@ interface Props {
     text: string,
     image: string,
     imageAlt: string,
+    textAlign?: 'left' | 'right',
     ctaButton?: {
         text: string,
         link: string,
@@ -14,11 +15,11 @@ interface Props {
     };
 }
 
-const { title, text, image, imageAlt, ctaButton } = Astro.props;
+const { title, text, image, imageAlt, textAlign = 'left', ctaButton } = Astro.props;
 ---
 
 <section
-    class="section section-register-gosim spotlight-section"
+    class={`section section-register-gosim spotlight-section ${textAlign === 'right' ? 'text-right' : ''}`}
     id="spotlight"
     data-theme-section="dark"
     data-bg-section="dark"
@@ -63,3 +64,24 @@ const { title, text, image, imageAlt, ctaButton } = Astro.props;
         </div>
     </div>
 </section>
+
+<style>
+  .section-register-gosim.text-right .row.grid {
+    flex-direction: row-reverse;
+  }
+  
+  .col-row-title h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  @media (max-width: 768px) {
+    .section-register-gosim .row.grid {
+      flex-direction: column;
+    }
+    
+    .col-row-title h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>

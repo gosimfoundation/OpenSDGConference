@@ -4,7 +4,6 @@ import Layout from "layouts/Layout.astro"
 import Intro from "components/Intro.astro"
 import Agenda from "components/Agenda.astro"
 import Cards from "components/Cards.astro"
-import FeaturedSpeakersSimple from "components/FeaturedSpeakersSimple.astro"
 
 ---
 
@@ -15,131 +14,143 @@ import FeaturedSpeakersSimple from "components/FeaturedSpeakersSimple.astro"
   navBackground="header-home"
   pageTransitionName="大会议程"
 >
-  <div
-    class="section-wrap"
-    id="agenda-intro"
-    data-theme-section="light"
-    data-bg-section="lightgray"
-  >
-    <Intro>
-      <h1 class="h2 light mb-4">大会议程</h1>
-      <p class="lead" style="text-align: justify;">
-        开放促进联合国可持续发展目标大会将于2025年9月13日举办为期一天的会议，
-        汇聚思想领袖、实践者和创新者。每个主题会议将以专家见解开场，
-        然后过渡到互动式开放讨论，促进关于开放技术如何推动联合国可持续发展目标进展的对话。
-        <br/><br/>
-        大会将遵循查塔姆大厦规则，并制作一份白皮书，记录关键要点和行动项目。
-        我们的目标是确定有影响力的合作项目，并在2026年纽约联合国总部举行的
-        联合国OSPOS for Good大会上提交进展报告。
-      </p>
-    </Intro>
-  </div>
 
-  <Agenda />
+  <Agenda
+    title="2025年9月13日 - 大会日程"
+    list={[
+      {
+        title: "09:00–09:45 | 开幕主题演讲",
+        markdown: `
+        * 欢迎致辞 - 黄铁军（北京智源人工智能研究院理事长）
+        * 主题演讲 - Dr. Mehdi Snene（联合国数字和新兴技术办公室首席人工智能官）
+        
+        开幕会议为探索开放技术如何推动全球可持续发展奠定基调。
+        `,
+      },
+      {
+        title: "09:45–10:50 | 开放数据促进可持续发展目标",
+        markdown: `
+        * 案例研究：公共医疗数据
+        * 小组讨论
+        
+        **主持人：** 林永华（北京智源人工智能研究院）
+        
+        **讨论嘉宾：** M.O. KHAH（联合国数据治理）、秦勇（南开大学）
+        
+        探讨开放数据倡议如何通过改善数据共享和协作来加速健康相关可持续发展目标的进展。
+        `,
+      },
+      {
+        title: "10:50–11:10 | 上午茶歇",
+        markdown: `
+        交流与茶点
+        `,
+      },
+      {
+        title: "11:10–12:15 | 开放政策促进可持续发展目标",
+        markdown: `
+        * 案例研究：与可持续发展目标相符的开源项目
+        * 小组讨论
+        
+        **主持人：** 赖安妮（生成式人工智能共创组织）
+        
+        **讨论嘉宾：** Gael Blondelle（Eclipse基金会）、Matt White（PyTorch基金会）
+        
+        讨论联合国参与开源社区的治理模式、贡献路径和政策框架。
+        `,
+      },
+      {
+        title: "12:15–13:30 | 午餐",
+        markdown: `
+        午餐与交流
+        `,
+      },
+      {
+        title: "13:30–14:35 | 开放科学促进可持续发展目标",
+        markdown: `
+        * 演讲：OpenSeek与开放计算
+        * 小组讨论
+        
+        **演讲嘉宾：** 林永华（北京智源人工智能研究院副总裁兼首席工程师）
+        
+        **讨论嘉宾：** Sameer Chauhan（联合国国际计算中心）、联合国大学墨西哥分校代表、国际电信联盟代表、东盟代表
+        
+        强调开放科学原则，识别障碍和推动因素，制定协作研究路线图。
+        `,
+      },
+      {
+        title: "14:35–15:40 | 未来人工智能促进可持续发展目标",
+        markdown: `
+        * 演讲：BrainU助力残障人士
+        * 小组讨论
+        
+        **演讲嘉宾：** 雷博（北京智源人工智能研究院/BrainCo中国）
+        
+        **主持人：** Hilary Carter（Linux基金会研究）
+        
+        **讨论嘉宾：** 国际电信联盟代表、南非政府学院代表、深度求索/通义千问/百度代表
+        
+        展望人工智能创新如何为可持续发展挑战创造包容性解决方案。
+        `,
+      },
+      {
+        title: "15:40–16:00 | 下午茶歇",
+        markdown: `
+        交流与茶点
+        `,
+      },
+      {
+        title: "16:00–16:40 | 展示与分享环节",
+        markdown: `
+        * 闪电演讲1：开源医疗解决方案
+        * 闪电演讲2：SDG 4教育技术
+        * 闪电演讲3：气候数据平台
+        * 闪电演讲4：普惠金融工具
+        
+        展示积极支持各项可持续发展目标的实际开源项目和用例。
+        `,
+      },
+      {
+        title: "16:40–17:30 | 闭幕式",
+        markdown: `
+        * 综合总结与关键要点
+        * 行动号召与后续步骤
+        
+        总结大会见解，概述推进可持续发展目标开放协作的具体行动。
+        `,
+      },
+    ]}
+  />
 
   <Cards
-    title="会议轨道"
-    description="大会设有专门的轨道，涵盖开源对可持续发展目标贡献的关键方面"
+    title="会议形式"
+    description="每个环节都旨在最大化参与度和知识共享"
     cards={[
       {
-        title: "政策与治理",
+        title: "主题演讲",
         description:
-          "探讨开源项目的政策框架、治理模式和监管考虑。",
-        image: "/icons/governance.svg",
+          "由领域专家进行20-30分钟的演讲，为每个主题领域设定背景",
+        image: "/icons/whitepaper.svg",
       },
       {
-        title: "技术创新",
+        title: "小组讨论",
         description:
-          "展示尖端开源技术及其在解决全球挑战中的应用。",
-        image: "/icons/aimodels.svg",
-      },
-      {
-        title: "数据与透明度",
-        description:
-          "讨论开放数据倡议、透明度措施和数据共享最佳实践。",
+          "45分钟的主持讨论，就关键议题带来多元视角",
         image: "/icons/collaboration.svg",
       },
       {
-        title: "社区建设",
+        title: "闪电演讲",
         description:
-          "学习如何构建和维持致力于可持续发展的包容性开源社区。",
-        image: "/icons/whitepaper.svg",
+          "10分钟的演示，展示实际应用和成功案例",
+        image: "/icons/aimodels.svg",
+      },
+      {
+        title: "交流茶歇",
+        description:
+          "为参与者提供结构化的交流和探索合作机会",
+        image: "/icons/networking.svg",
       },
     ]}
   />
 
-  <FeaturedSpeakersSimple
-    title="主题演讲嘉宾"
-    subtitle="来自联合国、学术界和开源社区的思想领袖"
-    speakers={[
-      {
-        name: "黄铁军",
-        role: "理事长",
-        company: "北京智源人工智能研究院",
-        image: "/images/speakers/generic-profile.png",
-      },
-      {
-        name: "Mehdi Snene",
-        role: "首席人工智能官",
-        company: "经合组织和联合国",
-        image: "/images/speakers/generic-profile.png",
-      },
-      {
-        name: "Gael Blondelle",
-        role: "高级副总裁",
-        company: "Eclipse基金会",
-        image: "/images/speakers/gael-blondelle.png",
-      },
-      {
-        name: "Matt White",
-        role: "执行董事",
-        company: "PyTorch基金会",
-        image: "/images/speakers/matt-white.png",
-      },
-    ]}
-  />
-
-  <Cards
-    title="研讨会与分组会议"
-    description="参与实践研讨会和深入的分组会议"
-    cards={[
-      {
-        title: "构建数字公共产品",
-        description:
-          "创建和维护作为数字公共产品的开源项目的实践研讨会。",
-        image: "/icons/positionpaper.svg",
-      },
-      {
-        title: "人工智能伦理",
-        description:
-          "关于在人工智能开发中负责任和伦理考虑的互动会议。",
-        image: "/icons/sovereignty.svg",
-      },
-      {
-        title: "资金和可持续性",
-        description:
-          "探索开源项目的资金模式和长期可持续性策略。",
-        image: "/icons/roadmap.svg",
-      },
-    ]}
-  />
-
-
-  <div
-    class="section-wrap"
-    id="register-cta"
-    data-theme-section="dark"
-    data-bg-section="dark"
-  >
-    <Intro>
-      <h2 class="h3 light mb-4">加入我们推进可持续发展目标</h2>
-      <p class="lead mb-5">
-        立即注册，预留您的席位，参加这一开创性的大会，
-        探索开放技术如何创造更可持续的未来。
-      </p>
-      <a href="/cn/register" class="btn light xl btn-hover">
-        立即注册
-      </a>
-    </Intro>
-  </div>
 </Layout>

@@ -4,7 +4,6 @@ import Layout from "layouts/Layout.astro"
 import Intro from "components/Intro.astro"
 import Agenda from "components/Agenda.astro"
 import Cards from "components/Cards.astro"
-import FeaturedSpeakersSimple from "components/FeaturedSpeakersSimple.astro"
 
 ---
 
@@ -15,34 +14,15 @@ import FeaturedSpeakersSimple from "components/FeaturedSpeakersSimple.astro"
   navBackground="header-home"
   pageTransitionName="Conference Agenda"
 >
-  <div
-    class="section-wrap"
-    id="intro"
-    data-theme-section="light"
-    data-bg-section="lightgray"
-  >
-    <Intro>
-      <h1 class="h3 light split-words animate-read mb-4" style="font-size:1.5rem; text-align: justify;">
-        The Open for UN SDG Conference on September 13, 2025, will feature a full-day program uniting 
-        thought leaders, practitioners, and innovators. Each thematic session will open with expert 
-        insights and transition into interactive open discussions, fostering dialogue on how open 
-        technologies can drive progress toward the UN Sustainable Development Goals.
-        <br/><br/>
-        The conference will follow the Chatham House Rule and produce a white paper capturing key 
-        takeaways and action items. We aim to identify impactful collaborative projects and present 
-        a progress report at the 2026 UN OSPOS for Good conference at the UN Headquarters in New York.
-      </h1>
-    </Intro>
-  </div>
 
   <Agenda
-    title="September 13, 2025 - Conference Schedule"
+    title="Sept 13, 2025 - Conference Schedule"
     list={[
       {
         title: "09:00–09:45 | Opening Keynote Session",
         markdown: `
         * Welcome Address by Tiejun Huang (Chairman, BAAI)
-        * Keynote by Mehdi Snene (Chief AI Officer, OECD & UN)
+        * Keynote by Dr. Mehdi Snene (Chief AI Officer, ODET, United Nations)
         
         The opening session sets the stage for a day of exploration into how open technologies can drive sustainable development globally.
         `,
@@ -173,51 +153,4 @@ import FeaturedSpeakersSimple from "components/FeaturedSpeakersSimple.astro"
     ]}
   />
 
-  <FeaturedSpeakersSimple
-    title="Keynote Speakers"
-    subtitle="Leading voices shaping the future of open collaboration for sustainable development"
-    speakers={[
-      {
-        name: "Tiejun Huang",
-        role: "Chairman",
-        company: "Beijing Academy of Artificial Intelligence",
-        image: "/images/speakers/generic-profile.png",
-      },
-      {
-        name: "Mehdi Snene",
-        role: "Chief AI Officer",
-        company: "OECD and UN",
-        image: "/images/speakers/generic-profile.png",
-      },
-      {
-        name: "Yonghua Lin",
-        role: "VP & Chief Engineer",
-        company: "Beijing Academy of Artificial Intelligence",
-        image: "/images/speakers/yonghua-lin.png",
-      },
-      {
-        name: "Hilary Carter",
-        role: "Senior Vice President",
-        company: "Linux Foundation Research",
-        image: "/images/speakers/generic-profile.png",
-      },
-    ]}
-  />
-
-
-  <div
-    class="section-wrap"
-    id="register-cta"
-    data-theme-section="dark"
-    data-bg-section="dark"
-  >
-    <Intro>
-      <h2 class="h3 light mb-3">Ready to Join Us?</h2>
-      <p class="lead mb-4">
-        Space is limited for this exclusive gathering of open-source and sustainability leaders.
-        Register now to secure your place at the Open for SDG Conference.
-      </p>
-      <a href="/register" class="btn primary xl btn-hover">Register Now</a>
-    </Intro>
-  </div>
 </Layout>

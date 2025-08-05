@@ -37,8 +37,9 @@ const links = isChinesePage ? [
   },
 ];
 
-// Language switcher link
-const langSwitchLink = isChinesePage ? '/en/' : '/cn/';
+// Language switcher link - maintain current page when switching languages
+const currentPath = pathname.replace(/^\/(en|cn)/, ''); // Remove language prefix
+const langSwitchLink = isChinesePage ? `/en${currentPath}` : `/cn${currentPath}`;
 const langSwitchText = isChinesePage ? 'EN' : '中文';
 
 const slug = Astro.url.pathname

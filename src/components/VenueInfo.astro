@@ -79,3 +79,34 @@ const { subtitle, title, location, image, text, ctaButton } = Astro.props;
         </div>
     </div>
 </section>
+
+<style>
+    .section-location-info h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    .location-flex p:last-child {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+    
+    .col-text.styled-content p {
+        font-size: 1.25rem;
+        line-height: 1.6;
+    }
+    
+    @media (max-width: 768px) {
+        .section-location-info h2 {
+            font-size: 1.5rem;
+        }
+        
+        .location-flex p:last-child {
+            font-size: 1.1rem;
+        }
+        
+        .col-text.styled-content p {
+            font-size: 1.1rem;
+        }
+    }
+</style>
