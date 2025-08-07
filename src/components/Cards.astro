@@ -59,4 +59,18 @@ const { title, description, cards } = Astro.props;
             font-size: 1.1rem;
         }
     }
+    
+    /* Ensure cards stretch to equal height but content stays top-aligned */
+    .row-audience {
+        align-items: stretch;
+    }
+    
+    .row-audience .why-reasons {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .row-audience .why-content {
+        align-self: flex-start;
+    }
 </style>
