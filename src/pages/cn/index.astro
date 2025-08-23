@@ -1,15 +1,13 @@
 ---
 // Components
-import Layout from "layouts/Layout.astro"
-import Hero from "components/Hero.astro"
-import Intro from "components/Intro.astro"
-import Cards from "components/Cards.astro"
-import TextAndImageSimple from "components/TextAndImageSimple.astro"
-import TextAndSponsors from "components/TextAndSponsors.astro"
-import VenueInfo from "components/VenueInfo.astro"
-import FeaturedSpeakersSimple from "components/FeaturedSpeakersSimple.astro"
-
-// Images
+import Layout from "layouts/Layout.astro";
+import Hero from "components/Hero.astro";
+import Intro from "components/Intro.astro";
+import Cards from "components/Cards.astro";
+import TextAndImageSimple from "components/TextAndImageSimple.astro";
+import TextAndSponsors from "components/TextAndSponsors.astro";
+import VenueInfo from "components/VenueInfo.astro";
+import FeaturedSpeakers from "components/FeaturedSpeakers.astro";
 ---
 
 <Layout
@@ -35,7 +33,7 @@ import FeaturedSpeakersSimple from "components/FeaturedSpeakersSimple.astro"
       },
     ]}
   />
-  
+
   <div
     class="section-wrap"
     id="intro"
@@ -47,14 +45,23 @@ import FeaturedSpeakersSimple from "components/FeaturedSpeakersSimple.astro"
         class="h3 light split-words animate-read mb-4"
         style="font-size:1.5rem; text-align: justify;"
       >
-        <b style="display: block; margin-bottom: 2rem;">开放共创·可持续发展大会</b>
-        开放共创·可持续发展大会汇聚联合国专家、开源社区、标准组织、技术专家、
-        学术研究专家以及公共和私营部门的创新者，共同应对全球挑战。我们一起探索开放协作
+        <b style="display: block; margin-bottom: 2rem;"
+          >开放共创·可持续发展大会</b
+        >
+        开放共创·可持续发展大会汇聚联合国专家、开源社区、标准组织、技术专家、 学术研究专家以及公共和私营部门的创新者，共同应对全球挑战。我们一起探索开放协作
         如何推动联合国可持续发展目标（SDGs）的进展——从气候行动到数字包容。这是一个号召，
         旨在共同创建以人工智能为重点的开源解决方案，建立全球合作，将共同愿景转化为行动。
       </h1>
     </Intro>
   </div>
+
+  <FeaturedSpeakers
+    title="特邀演讲嘉宾"
+    ctaButton={{
+      text: "未来更新其他讲师",
+      link: "/cn/speakers",
+    }}
+  />
 
   <Cards
     title="大会主题"
@@ -86,8 +93,7 @@ import FeaturedSpeakersSimple from "components/FeaturedSpeakersSimple.astro"
       },
       {
         title: "展示与分享",
-        description:
-          "展示适合联合国可持续发展目标的示例用例和开源项目。",
+        description: "展示适合联合国可持续发展目标的示例用例和开源项目。",
         image: "/icons/whitepaper.svg",
       },
     ]}
@@ -103,37 +109,6 @@ import FeaturedSpeakersSimple from "components/FeaturedSpeakersSimple.astro"
       link: "https://sdgs.un.org/zh/goals",
       openInNewTab: true,
     }}
-  />
-
-  <FeaturedSpeakersSimple
-    title="特邀演讲嘉宾"
-    subtitle="开源和可持续发展领域的领军人物"
-    speakers={[
-      {
-        name: "黄铁军",
-        role: "理事长",
-        company: "北京智源人工智能研究院",
-        image: "/images/speakers/tiejun-huang.png",
-      },
-      {
-        name: "Dr. Mehdi Snene",
-        role: "首席人工智能官",
-        company: "联合国",
-        image: "/images/speakers/mehdi-snene.png",
-      },
-      {
-        name: "林咏华",
-        role: "总工程师",
-        company: "北京智源人工智能研究院",
-        image: "/images/speakers/yonghua-lin.png",
-      },
-      {
-        name: "Matt White",
-        role: "执行董事",
-        company: "PyTorch基金会",
-        image: "/images/speakers/matt-white.png",
-      },
-    ]}
   />
 
   <TextAndSponsors

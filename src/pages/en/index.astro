@@ -1,15 +1,13 @@
 ---
 // Components
-import Layout from "layouts/Layout.astro"
-import Hero from "components/Hero.astro"
-import Intro from "components/Intro.astro"
-import Cards from "components/Cards.astro"
-import TextAndImageSimple from "components/TextAndImageSimple.astro"
-import TextAndSponsors from "components/TextAndSponsors.astro"
-import VenueInfo from "components/VenueInfo.astro"
-import FeaturedSpeakersSimple from "components/FeaturedSpeakersSimple.astro"
-
-// Images
+import Layout from "layouts/Layout.astro";
+import Hero from "components/Hero.astro";
+import Intro from "components/Intro.astro";
+import Cards from "components/Cards.astro";
+import TextAndImageSimple from "components/TextAndImageSimple.astro";
+import TextAndSponsors from "components/TextAndSponsors.astro";
+import VenueInfo from "components/VenueInfo.astro";
+import FeaturedSpeakers from "components/FeaturedSpeakers.astro";
 ---
 
 <Layout
@@ -35,7 +33,7 @@ import FeaturedSpeakersSimple from "components/FeaturedSpeakersSimple.astro"
       },
     ]}
   />
-  
+
   <div
     class="section-wrap"
     id="intro"
@@ -47,17 +45,27 @@ import FeaturedSpeakersSimple from "components/FeaturedSpeakersSimple.astro"
         class="h3 light split-words animate-read mb-4"
         style="font-size:1.5rem; text-align: justify;"
       >
-        <b style="display: block; margin-bottom: 2rem;">Open for SDG Conference</b>
-        The Open for SDG Conference brings together UN experts, open source communities, 
-        standards organizations, technologists, academic and research experts, and public and 
-        private sector innovators to tackle global challenges. Together, we explore how open 
-        collaboration can drive progress on the United Nations Sustainable Development Goals 
-        (SDGs)—from climate action to digital inclusion. This is a call to co-create open 
-        source solutions with an AI focus, build global collaboration, and turn shared vision 
-        into action.
+        <b style="display: block; margin-bottom: 2rem;"
+          >Open for SDG Conference</b
+        >
+        The Open for SDG Conference brings together UN experts, open source communities,
+        standards organizations, technologists, academic and research experts, and
+        public and private sector innovators to tackle global challenges. Together,
+        we explore how open collaboration can drive progress on the United Nations
+        Sustainable Development Goals (SDGs)—from climate action to digital inclusion.
+        This is a call to co-create open source solutions with an AI focus, build
+        global collaboration, and turn shared vision into action.
       </h1>
     </Intro>
   </div>
+
+  <FeaturedSpeakers
+    title="Featured Speakers"
+    ctaButton={{
+      text: "More Speakers to be Announced",
+      link: "/en/speakers",
+    }}
+  />
 
   <Cards
     title="Conference Themes"
@@ -106,37 +114,6 @@ import FeaturedSpeakersSimple from "components/FeaturedSpeakersSimple.astro"
       link: "https://sdgs.un.org/goals",
       openInNewTab: true,
     }}
-  />
-
-  <FeaturedSpeakersSimple
-    title="Featured Speakers"
-    subtitle="Leading voices in open-source and sustainable development"
-    speakers={[
-      {
-        name: "Tiejun Huang",
-        role: "Chairman",
-        company: "BAAI",
-        image: "/images/speakers/tiejun-huang.png",
-      },
-      {
-        name: "Dr. Mehdi Snene",
-        role: "Chief AI Officer",
-        company: "United Nations",
-        image: "/images/speakers/mehdi-snene.png",
-      },
-      {
-        name: "Yonghua Lin",
-        role: "Senior Vice President",
-        company: "BAAI",
-        image: "/images/speakers/yonghua-lin.png",
-      },
-      {
-        name: "Matt White",
-        role: "Executive Director",
-        company: "PyTorch Foundation",
-        image: "/images/speakers/matt-white.png",
-      },
-    ]}
   />
 
   <TextAndSponsors

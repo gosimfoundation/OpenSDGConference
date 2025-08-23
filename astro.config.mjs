@@ -18,8 +18,6 @@ export default defineConfig({
   },
   redirects: {
     '/schedule': '/en/agenda',
-    '/schedule/': '/en/agenda/',
     '/agenda': '/en/agenda',
-    '/agenda/': '/en/agenda/',
   },
 });

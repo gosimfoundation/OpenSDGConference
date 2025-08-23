@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://paris2025.gosim.org/sitemap-index.xml
