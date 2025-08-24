@@ -1,10 +1,9 @@
 ---
 // Components
-import Layout from "layouts/Layout.astro"
-import Intro from "components/Intro.astro"
-import Agenda from "components/Agenda.astro"
-import Cards from "components/Cards.astro"
-
+import Layout from "layouts/Layout.astro";
+import Intro from "components/Intro.astro";
+import Agenda from "components/Agenda.astro";
+import Cards from "components/Cards.astro";
 ---
 
 <Layout
@@ -14,109 +13,116 @@ import Cards from "components/Cards.astro"
   navBackground="header-home"
   pageTransitionName="Conference Agenda"
 >
-
   <Agenda
     title="Sept 13, 2025 - Conference Schedule"
     list={[
       {
         title: "09:00–09:45 | Opening Keynote Session",
         markdown: `
-        * Welcome Address by Tiejun Huang (Chairman, BAAI)
-        * Keynote by Dr. Mehdi Snene (Chief AI Officer, United Nations)
-        
-        The opening session sets the stage for a day of exploration into how open technologies can drive sustainable development globally.
+      - **Welcome Speech (15 min):** Prof. Tiejun Huang (Professor from Peking University, Chairman of BAAI)
+      - **Opening Keynote (20 min):** Dr. Mehdi Snene (Chief AI Officer at UN ODET)
+
+      *The opening session sets the stage for a day of exploration into how open technologies can drive sustainable development globally.*
         `,
       },
       {
-        title: "09:45–10:50 | Open Data for UN SDG",
+        title: "09:45–10:50 | Open Data for the UN SDGs",
         markdown: `
-        * Case Study: Data for Public Healthcare
-        * Panel Discussion
-        
-        **Moderator:** Yonghua Lin (BAAI)
-        
-        **Panelists:** Yong Qin (Nankai University)
-        
-        Exploring how open data initiatives can accelerate progress on health-related SDGs through improved data sharing and collaboration.
+        - **Presentation (15 min):** Data for Public Good
+        - **Panel Discussion (45 min)**
+
+            - **Moderator:** Yonghua Lin (VP and Chief Engineer at BAAI)
+            - **Panelists:**
+                - Nicolas Flores Herr (Team Lead Foundation Models & Gen AI Systems, Fraunhofer IAIS)
+                - Joaquin Salvachua (Professor at Universidad Politécnica de Madrid, ML-OPS & Big Data expert)
+                - Johann Diedrick (Mozilla Leading Scientist, Open Data Initiative at Mozilla)
+
+*Exploring how open data initiatives can accelerate progress toward the UN SDGs through improved data sharing and collaboration.*
         `,
       },
       {
         title: "10:50–11:10 | Morning Break",
         markdown: `
-        Networking and Refreshments
+Tea, Coffee & Snacks - Networking Opportunity
         `,
       },
       {
-        title: "11:10–12:15 | Open Policy for UN SDG",
+        title: "11:10–12:15 | Open Policy for the UN SDGs",
         markdown: `
-        * Case Study: Open-Source Projects Aligned with SDGs
-        * Panel Discussion
-        
-        **Moderator:** Anni Lai (Co-chair of Gen AI Commons, Board Director of LF AI & Data)
-        
-        **Panelists:** Gael Blondelle (Eclipse Foundation), Matt White (PyTorch Foundation)
-        
-        Discussing governance models, contribution pathways, and policy frameworks for UN engagement with open-source communities.
+- **Presentation (15 min):** Open Source Project for SDG (Case Study Sharing)
+- **Panel Discussion (45 min)**
+
+    - **Moderator:** Anni Lai (Co-Chair, Generative AI Commons)
+    - **Panelists:**
+        - Nooman Fehri (Former Digital and Technology Minister, Tunisia)
+        - Vincent Caldeira (CTO of Red Hat APAC, Top 10 CTO in APAC 2023)
+        - Matt White (Executive Director, PyTorch Foundation)
+        - Liyun Yang (Mulan Community - Open Source Policy Strategy for China Government)
+
+*Discussing governance models, contribution pathways, policy and legal considerations, and alignment mechanisms for UN engagement with open source communities.*
         `,
       },
       {
         title: "12:15–13:30 | Lunch Break",
         markdown: `
-        Lunch and Networking
+Lunch and Networking
         `,
       },
       {
-        title: "13:30–14:35 | Open Science for UN SDG",
+        title: "13:30–14:35 | Open Science for the UN SDGs",
         markdown: `
-        * Presentation on OpenSeek & Open Compute
-        * Panel Discussion
-        
-        **Speaker:** Yonghua Lin (VP & Chief Engineer, BAAI)
-        
-        **Moderator:** Bryan Che (Board Member, Eclipse Foundation and CNCF)
-        
-        **Panelists:** Representatives from UNU Mexico, ITU, ASEAN
-        
-        Highlighting open science principles, identifying barriers and enablers, and shaping a roadmap for collaborative research.
+- **Presentation (15 min):** OpenSeek and Open Compute for SDG
+- **Panel Discussion (45 min)**
+
+    - **Moderator:** Alexy Khrabrov (AI/ML Community Architect, Neo4j)
+    - **Panelists:**
+        - Dr. Minghui Zhou (Tenured Full Professor and Vice Dean, School of Computer Science, Peking University)
+        - Mohamed Farahat (Former UNSG HLAB member, Legal Expert with UNESCO)
+        - Walid Mathlouthi (Head of Infrastructure Division, ITU)
+        - Xinwei Hu (Chair of the openEuler Community Technical Committee, Huawei)
+
+*Exploring how Open Science principles can accelerate progress toward UN SDGs through transparency, collaboration, and accessibility. Focus on barriers, enablers, cross-border collaboration, and ethical considerations.*
         `,
       },
       {
-        title: "14:35–15:40 | Future AI for UN SDG",
+        title: "14:35–15:40 | Future AI for the UN SDGs",
         markdown: `
-        * Presentation: BrainU for Persons with Disabilities
-        * Panel Discussion
-        
-        **Speaker:** Bo Lei (BAAI / BrainCo China)
-        
-        **Panelists:** Representatives from ITU, School of Government of South Africa, DeepSeek/Qwen/Baidu
-        
-        Envisioning how AI innovations can create inclusive solutions for sustainable development challenges.
+- **Presentation (15 min):** BrainU for Persons with Disabilities
+- **Panel Discussion (45 min)**
+
+    - **Moderator:** Bryan Che (Board Member, Eclipse Foundation and LF CNCF)
+    - **Panelists:**
+        - Prof. Kai Du (Assistant Professor, Psychology & Cognitive Science, Tsinghua University)
+        - Dr. Satya Mallick (CEO of OpenCV.org, AI & Computer Vision Expert)
+        - Weijie Sun (Founder & CEO at DP Technology - AI for Science)
+
+*Envisioning the future of AI in sustainable development context. Focus on inclusive and equitable AI futures, bridging innovation with impact, and promoting multistakeholder collaboration.*
         `,
       },
       {
         title: "15:40–16:00 | Afternoon Break",
         markdown: `
-        Networking and Refreshments
+Networking and Refreshments
         `,
       },
       {
         title: "16:00–16:40 | Show & Tell Sessions",
         markdown: `
-        * Lightning Talk 1: Open-Source Healthcare Solutions
-        * Lightning Talk 2: Educational Technology for SDG 4
-        * Lightning Talk 3: Climate Data Platforms
-        * Lightning Talk 4: Financial Inclusion Tools
-        
-        Showcasing practical open-source projects and use cases that are actively supporting various SDGs.
+- **Lightning Talk 1:** Open-Source Healthcare Solutions
+- **Lightning Talk 2:** Educational Technology for SDG 4
+- **Lightning Talk 3:** Climate Data Platforms
+- **Lightning Talk 4:** Financial Inclusion Tools
+
+*Showcasing practical open-source projects and use cases that are actively supporting various SDGs.*
         `,
       },
       {
         title: "16:40–17:30 | Closing Session",
         markdown: `
-        * Synthesis and Key Takeaways
-        * Call to Action and Next Steps
-        
-        Summarizing insights from the conference and outlining concrete actions for advancing open collaboration for UN SDG.
+- Synthesis and Key Takeaways
+- Call to Action and Next Steps
+
+*Summarizing insights from the conference and outlining concrete actions for advancing open collaboration for UN SDGs.*
         `,
       },
     ]}
@@ -129,7 +135,7 @@ import Cards from "components/Cards.astro"
       {
         title: "Keynote Presentations",
         description:
-          "20-30 minute talks by leading experts setting the context for each thematic area",
+          "15-20 minute talks by leading experts setting the context for each thematic area",
         image: "/icons/whitepaper.svg",
       },
       {
@@ -152,5 +158,4 @@ import Cards from "components/Cards.astro"
       },
     ]}
   />
-
 </Layout>
