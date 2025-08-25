@@ -155,6 +155,16 @@
       "tag": "open-for-sdg"
     },
     {
+      "id": "richard-bian",
+      "name": "Richard Bian",
+      "bio": "Richard Bian (Chinese: 边思康) led Ant Group Open Source initiative from day 1 and developed the initiative from a single person effort to a cross-functional Open Source Program Office (OSPO) team covering governance, strategy, developer experience, product development, growth and internationalization efforts. His latest focus is on GenAI strategy and innovative products. \nAs an ex-Square, ex-Microsoft engineer, Richard has been studying and working for more than 5 years each in 4 different countries (Singapore, Canada, USA and China) with immensely cross-cultural collaboration experience.",
+      "role": "Director of Strategy and New Product (OSS)",
+      "org": "Ant Group",
+      "roleOrg": "Director of Strategy and New Product (OSS), Ant Group",
+      "image": "richard-bian.jpg",
+      "tag": "open-for-sdg"
+    },
+    {
       "id": "alexy-khrabrov-",
       "name": "Alexy Khrabrov ",
       "bio": "Alexy Khrabrov is the AI Community Architect at Neo4j, the category-defining Graph database company. Alexy is the founding Chair of Open-Source Science at NumFOCUS, and a cofounder of the AI Alliance. Alexy was the founding Chair of the Generative AI Commons at the Linux Foundation for AI and Data (LFAI) and now represents Neo4j at LFAI.  Alexy is the founder and organizer of Bay Area AI and AI Agent SF meetups, as well as the Scale/Data/AI By the Bay conferences, the independent OSS AI conference running since 2013.",
