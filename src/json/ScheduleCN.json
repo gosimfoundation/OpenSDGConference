@@ -59,8 +59,8 @@
       {
         "date": "9月13日",
         "timeSlot": "10:50 - 11:50",
-        "title": "开放数据促进联合国可持续发展目标",
-        "content": "<p><strong>小组讨论 (60分钟)</strong></p><p><strong>主持人:</strong> 林咏华 (北京智源人工智能研究院副总裁兼首席工程师)</p><p><strong>讨论嘉宾:</strong></p><ul><li>Nicolas Flores Herr (弗劳恩霍夫IAIS基础模型与生成式AI系统团队负责人)</li><li>Joaquin Salvachua (马德里理工大学教授，ML-OPS与大数据专家)</li><li>Johann Diedrick (Mozilla首席科学家，Mozilla开放数据倡议负责人)</li><li>边思康 (战略与新产品总监 (OSS)，蚂蚁集团)</li></ul><p><em>探讨开放数据倡议如何通过改善数据共享和协作来加速联合国可持续发展目标的进展。</em></p>",
+        "title": "Open Data 开放数据促进联合国可持续发展目标",
+        "content": "<p><strong>小组讨论 (60分钟)</strong></p><p><strong>主持人:</strong> 林咏华 (北京智源人工智能研究院副总裁兼首席工程师)</p><p><strong>讨论嘉宾:</strong></p><ul><li>Nicolas Flores Herr (弗劳恩霍夫IAIS基础模型与生成式AI系统团队负责人)</li><li>Joaquin Salvachua (马德里理工大学教授，ML-OPS与大数据专家)</li><li>Johann Diedrick (Mozilla首席科学家，Mozilla开放数据倡议负责人)</li><li>边思康 (战略与新产品总监 (OSS)，蚂蚁集团)</li><li>秦勇 (南开大学教授)</li></ul><p><em>探讨开放数据倡议如何通过改善数据共享和协作来加速联合国可持续发展目标的进展。</em></p>",
         "speakers": [
           {
             "id": "yonghua-lin",
@@ -106,13 +106,22 @@
             ],
             "roleOrg": "战略与新产品总监 (OSS)，蚂蚁集团",
             "image": "richard-bian.jpg"
+          },
+          {
+            "id": "yong-qin",
+            "name": "秦勇",
+            "tags": [
+              "panel"
+            ],
+            "roleOrg": "南开大学教授",
+            "image": "yong-qin.png"
           }
         ]
       },
       {
         "date": "9月13日",
         "timeSlot": "11:50 - 12:10",
-        "title": "展示与分享 #1 & #2",
+        "title": "Show & Tell 展示与分享 #1 & #2",
         "content": "<p><strong>展示与分享 #1 (10分钟)</strong></p><p><strong>展示与分享 #2 (10分钟)</strong></p>",
         "speakers": []
       },
@@ -126,8 +135,8 @@
       {
         "date": "9月13日",
         "timeSlot": "14:00 - 15:00",
-        "title": "开放政策促进联合国可持续发展目标",
-        "content": "<p><strong>小组讨论 (60分钟)</strong></p><p><strong>主持人:</strong> Anni Lai (生成式AI共同体联合主席)</p><p><strong>讨论嘉宾:</strong></p><ul><li>Nooman Fehri (突尼斯前数字技术部长)</li><li>Vincent Caldeira (红帽亚太区首席技术官，2023年亚太区十大CTO)</li><li>Matt White (PyTorch基金会执行董事)</li><li>杨丽蕴 (木兰社区 - 中国政府开源政策战略)</li><li>秦勇 (南开大学教授)</li></ul><p><em>讨论联合国参与开源社区的治理模式、贡献路径、政策与法律考量，以及协调机制。</em></p>",
+        "title": "Open Policy 开放政策促进联合国可持续发展目标",
+        "content": "<p><strong>小组讨论 (60分钟)</strong></p><p><strong>主持人:</strong> Anni Lai (生成式AI共同体联合主席)</p><p><strong>讨论嘉宾:</strong></p><ul><li>Nooman Fehri (突尼斯前数字技术部长)</li><li>Vincent Caldeira (红帽亚太区首席技术官，2023年亚太区十大CTO)</li><li>Matt White (PyTorch基金会执行董事)</li><li>杨丽蕴 (木兰社区 - 中国政府开源政策战略)</li></ul><p><em>讨论联合国参与开源社区的治理模式、贡献路径、政策与法律考量，以及协调机制。</em></p>",
         "speakers": [
           {
             "id": "anni-lai",
@@ -173,22 +182,13 @@
             ],
             "roleOrg": "中国电子技术标准化研究院云计算研究室主任",
             "image": "liyun-yang.jpg"
-          },
-          {
-            "id": "yong-qin",
-            "name": "秦勇",
-            "tags": [
-              "panel"
-            ],
-            "roleOrg": "南开大学教授",
-            "image": "yong-qin.png"
           }
         ]
       },
       {
         "date": "9月13日",
         "timeSlot": "15:10 - 15:20",
-        "title": "展示与分享 #3",
+        "title": "Show & Tell 展示与分享 #3",
         "content": "<p><strong>展示与分享 #3 (10分钟)</strong></p>",
         "speakers": []
       },
@@ -202,8 +202,8 @@
       {
         "date": "9月13日",
         "timeSlot": "15:40 - 16:20",
-        "title": "开放科学促进联合国可持续发展目标",
-        "content": "<p><strong>小组讨论 (40分钟)</strong></p><p><strong>主持人:</strong> Alexy Khrabrov (Neo4j AI/ML社区架构师)</p><p><strong>讨论嘉宾:</strong></p><ul><li>周明辉 (北京大学计算机学院终身教授、副院长)</li><li>Mohamed Farahat (前联合国秘书长AI高级别咨询委员会成员，UNESCO法律专家)</li><li>Walid Mathlouthi (国际电信联盟基础设施部门负责人)</li><li>胡欣蔚 (华为openEuler社区技术委员会主席)</li><li>林咏华 (北京智源人工智能研究院副总裁兼首席工程师)</li></ul><p><em>探讨开放科学原则如何通过透明度、协作和可及性加速联合国可持续发展目标的进展。重点关注障碍、推动因素、跨境协作和伦理考量。</em></p>",
+        "title": "Open Science 开放科学促进联合国可持续发展目标",
+        "content": "<p><strong>小组讨论 (40分钟)</strong></p><p><strong>主持人:</strong> Alexy Khrabrov (Neo4j AI/ML社区架构师)</p><p><strong>讨论嘉宾:</strong></p><ul><li>周明辉 (北京大学计算机学院终身教授、副院长)</li><li>Mohamed Farahat (前联合国秘书长AI高级别咨询委员会成员，UNESCO法律专家)</li><li>Walid Mathlouthi (国际电信联盟基础设施部门负责人)</li><li>胡欣蔚 (openEuler社区技术委员会主席)</li><li>林咏华 (北京智源人工智能研究院副总裁兼首席工程师)</li></ul><p><em>探讨开放科学原则如何通过透明度、协作和可及性加速联合国可持续发展目标的进展。重点关注障碍、推动因素、跨境协作和伦理考量。</em></p>",
         "speakers": [
           {
             "id": "alexy-khrabrov-",
@@ -247,7 +247,7 @@
             "tags": [
               "panel"
             ],
-            "roleOrg": "华为openEuler社区技术委员会主席",
+            "roleOrg": "openEuler社区技术委员会主席",
             "image": "xinwei-hu.jpeg"
           },
           {
@@ -265,13 +265,15 @@
         "date": "9月13日",
         "timeSlot": "16:20 - 16:30",
         "title": "Intelligence BooM AI 开源基础软件赋能协作生态建设",
-        "content": "<p><strong>个人演讲 (10分钟)</strong></p><p>胡欣蔚 (华为openEuler社区技术委员会主席)</p><p><em>探讨开源基础软件如何赋能AI开发的协作生态建设。</em></p>",
+        "content": "<p><strong>个人演讲 (10分钟)</strong></p><p>胡欣蔚 (openEuler社区技术委员会主席)</p><p><em>探讨开源基础软件如何赋能AI开发的协作生态建设。</em></p>",
         "speakers": [
           {
             "id": "xinwei-hu",
             "name": "胡欣蔚",
-            "tags": ["keynote"],
-            "roleOrg": "华为openEuler社区技术委员会主席",
+            "tags": [
+              "keynote"
+            ],
+            "roleOrg": "openEuler社区技术委员会主席",
             "image": "xinwei-hu.jpeg"
           }
         ]
@@ -285,7 +287,9 @@
           {
             "id": "yonghua-lin",
             "name": "林咏华",
-            "tags": ["keynote"],
+            "tags": [
+              "keynote"
+            ],
             "roleOrg": "北京智源人工智能研究院副总裁兼首席工程师",
             "image": "yonghua-lin.jpg"
           }
@@ -294,7 +298,7 @@
       {
         "date": "9月13日",
         "timeSlot": "16:40 - 17:40",
-        "title": "未来人工智能促进联合国可持续发展目标",
+        "title": "Future AI 未来人工智能促进联合国可持续发展目标",
         "content": "<p><strong>小组讨论 (60分钟)</strong></p><p><strong>主持人:</strong> Bryan Che (Eclipse基金会和LF CNCF董事会成员)</p><p><strong>讨论嘉宾:</strong></p><ul><li>杜凯 (清华大学心理与认知科学系助理教授)</li><li>殷鹏 (助理教授，数据科学学院, 香港中文大学)</li><li>Dr. Satya Mallick (OpenCV.org首席执行官，AI与计算机视觉专家)</li><li>孙伟杰 (深势科技创始人兼首席执行官 - AI for Science)</li></ul><p><em>展望AI在可持续发展背景下的未来。重点关注包容性和公平的AI未来，连接创新与影响，促进多方利益相关者协作。</em></p>",
         "speakers": [
           {

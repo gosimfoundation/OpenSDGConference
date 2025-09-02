@@ -60,7 +60,7 @@
         "date": "Sept 13",
         "timeSlot": "10:50 - 11:50",
         "title": "Open Data for the UN SDGs",
-        "content": "<p><strong>Panel Discussion (60 min)</strong></p><p><strong>Moderator:</strong> Yonghua Lin (VP and Chief Engineer at BAAI)</p><p><strong>Panelists:</strong></p><ul><li>Nicolas Flores Herr (Team Lead Foundation Models & Gen AI Systems, Fraunhofer IAIS)</li><li>Joaquin Salvachua (Professor at Universidad Politécnica de Madrid, ML-OPS & Big Data expert)</li><li>Johann Diedrick (Mozilla Leading Scientist, Open Data Initiative at Mozilla)</li><li>Richard Bian (Director of Strategy and New Product (OSS), Ant Group)</li></ul><p><em>Exploring how open data initiatives can accelerate progress toward the UN SDGs through improved data sharing and collaboration.</em></p>",
+        "content": "<p><strong>Panel Discussion (60 min)</strong></p><p><strong>Moderator:</strong> Yonghua Lin (VP and Chief Engineer at BAAI)</p><p><strong>Panelists:</strong></p><ul><li>Nicolas Flores Herr (Team Lead Foundation Models & Gen AI Systems, Fraunhofer IAIS)</li><li>Joaquin Salvachua (Professor at Universidad Politécnica de Madrid, ML-OPS & Big Data expert)</li><li>Johann Diedrick (Mozilla Leading Scientist, Open Data Initiative at Mozilla)</li><li>Richard Bian (Director of Strategy and New Product (OSS), Ant Group)</li><li>Yong Qin (Prof., Nankai University)</li></ul><p><em>Exploring how open data initiatives can accelerate progress toward the UN SDGs through improved data sharing and collaboration.</em></p>",
         "speakers": [
           {
             "id": "yonghua-lin",
@@ -106,6 +106,15 @@
             ],
             "roleOrg": "Director of Strategy and New Product (OSS), Ant Group",
             "image": "richard-bian.jpg"
+          },
+          {
+            "id": "yong-qin",
+            "name": "Yong Qin",
+            "tags": [
+              "panel"
+            ],
+            "roleOrg": "Prof., Nankai University",
+            "image": "yong-qin.png"
           }
         ]
       },
@@ -127,7 +136,7 @@
         "date": "Sept 13",
         "timeSlot": "14:00 - 15:00",
         "title": "Open Policy for the UN SDGs",
-        "content": "<p><strong>Panel Discussion (60 min)</strong></p><p><strong>Moderator:</strong> Anni Lai (Co-Chair, Generative AI Commons)</p><p><strong>Panelists:</strong></p><ul><li>Nooman Fehri (Former Digital and Technology Minister, Tunisia)</li><li>Vincent Caldeira (CTO of Red Hat APAC, Top 10 CTO in APAC 2023)</li><li>Matt White (Executive Director, PyTorch Foundation)</li><li>Liyun Yang (Mulan Community - Open Source Policy Strategy for China Government)</li><li>Yong Qin (Prof., Nankai University)</li></ul><p><em>Discussing governance models, contribution pathways, policy and legal considerations, and alignment mechanisms for UN engagement with open source communities.</em></p>",
+        "content": "<p><strong>Panel Discussion (60 min)</strong></p><p><strong>Moderator:</strong> Anni Lai (Co-Chair, Generative AI Commons)</p><p><strong>Panelists:</strong></p><ul><li>Nooman Fehri (Former Digital and Technology Minister, Tunisia)</li><li>Vincent Caldeira (CTO of Red Hat APAC, Top 10 CTO in APAC 2023)</li><li>Matt White (Executive Director, PyTorch Foundation)</li><li>Liyun Yang (Mulan Community - Open Source Policy Strategy for China Government)</li></ul><p><em>Discussing governance models, contribution pathways, policy and legal considerations, and alignment mechanisms for UN engagement with open source communities.</em></p>",
         "speakers": [
           {
             "id": "anni-lai",
@@ -173,15 +182,6 @@
             ],
             "roleOrg": "Senior Engineer, Director of the Cloud Computing Research Office at the China Electronics Standardization Institute",
             "image": "liyun-yang.jpg"
-          },
-          {
-            "id": "yong-qin",
-            "name": "Yong Qin",
-            "tags": [
-              "panel"
-            ],
-            "roleOrg": "Prof., Nankai University",
-            "image": "yong-qin.png"
           }
         ]
       },
