@@ -201,40 +201,6 @@
       },
       {
         "date": "9月13日",
-        "timeSlot": "15:40 - 15:50",
-        "title": "智能BooM AI开源基础软件赋能协作生态建设",
-        "content": "<p><strong>个人演讲 (10分钟)</strong></p><p>胡欣蔚 (华为openEuler社区技术委员会主席)</p><p><em>探讨开源基础软件如何赋能AI开发的协作生态建设。</em></p>",
-        "speakers": [
-          {
-            "id": "xinwei-hu",
-            "name": "胡欣蔚",
-            "tags": [
-              "keynote"
-            ],
-            "roleOrg": "华为openEuler社区技术委员会主席",
-            "image": "xinwei-hu.jpeg"
-          }
-        ]
-      },
-      {
-        "date": "9月13日",
-        "timeSlot": "15:50 - 16:00",
-        "title": "BAAI开放科学倡议",
-        "content": "<p><strong>个人演讲 (10分钟)</strong></p><p>林咏华 (北京智源人工智能研究院副总裁兼首席工程师)</p><p><em>介绍BAAI的开放科学倡议及其对可持续发展目标的贡献。</em></p>",
-        "speakers": [
-          {
-            "id": "yonghua-lin",
-            "name": "林咏华",
-            "tags": [
-              "keynote"
-            ],
-            "roleOrg": "北京智源人工智能研究院副总裁兼首席工程师",
-            "image": "yonghua-lin.jpg"
-          }
-        ]
-      },
-      {
-        "date": "9月13日",
         "timeSlot": "15:40 - 16:20",
         "title": "开放科学促进联合国可持续发展目标",
         "content": "<p><strong>小组讨论 (40分钟)</strong></p><p><strong>主持人:</strong> Alexy Khrabrov (Neo4j AI/ML社区架构师)</p><p><strong>讨论嘉宾:</strong></p><ul><li>周明辉 (北京大学计算机学院终身教授、副院长)</li><li>Mohamed Farahat (前联合国秘书长AI高级别咨询委员会成员，UNESCO法律专家)</li><li>Walid Mathlouthi (国际电信联盟基础设施部门负责人)</li><li>胡欣蔚 (华为openEuler社区技术委员会主席)</li><li>林咏华 (北京智源人工智能研究院副总裁兼首席工程师)</li></ul><p><em>探讨开放科学原则如何通过透明度、协作和可及性加速联合国可持续发展目标的进展。重点关注障碍、推动因素、跨境协作和伦理考量。</em></p>",
@@ -298,7 +264,7 @@
       {
         "date": "9月13日",
         "timeSlot": "16:20 - 16:30",
-        "title": "智能BooM AI开源基础软件赋能协作生态建设",
+        "title": "Intelligence BooM AI 开源基础软件赋能协作生态建设",
         "content": "<p><strong>个人演讲 (10分钟)</strong></p><p>胡欣蔚 (华为openEuler社区技术委员会主席)</p><p><em>探讨开源基础软件如何赋能AI开发的协作生态建设。</em></p>",
         "speakers": [
           {
