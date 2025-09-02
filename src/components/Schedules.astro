@@ -156,10 +156,7 @@ const getEventUrl = (title: string): string => {
                               <div class="card-row card-row-speakers">
                                 {session.speakers.map((speaker: Speaker) => (
                                   <div class="card-col">
-                                    <a
-                                      class="single-speakers-card"
-                                      href={`/speakers/${speaker.id}/`}
-                                    >
+                                    <div class="single-speakers-card">
                                       <div class="card-row card-row-image">
                                         <div class="card-image">
                                           {speaker?.image &&
@@ -192,7 +189,7 @@ const getEventUrl = (title: string): string => {
                                         <h3 class="h5">{speaker.name}</h3>
                                         <p>{speaker.roleOrg}</p>
                                       </div>
-                                    </a>
+                                    </div>
                                   </div>
                                 ))}
                               </div>
