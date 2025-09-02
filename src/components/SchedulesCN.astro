@@ -29,8 +29,8 @@ interface Props {
   activeCategory?: string
 }
 
-// Import the schedule data
-import scheduleData from "json/Schedule.json"
+// Import the Chinese schedule data
+import scheduleData from "json/ScheduleCN.json"
 
 // Import all images
 const images = import.meta.glob<{ default: ImageMetadata }>(
@@ -38,7 +38,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 )
 
 // Use the provided props or default values
-const { currentDay = "May 6", activeCategory = "All" } = Astro.props
+const { currentDay = "9月13日", activeCategory = "All" } = Astro.props
 
 // Helper function to get category name from tag ID
 const getCategoryNameFromTag = (tagId: string): string => {
@@ -73,12 +73,10 @@ const allSessions: Session[] = Object.entries(scheduleData.sessions).flatMap(
           scheduleData.categories.find((cat) => cat.id === categoryName)
             ?.name || categoryName,
         isSpecialEvent:
-          session.title === "Keynote" ||
-          session.title === "Morning Coffee" ||
-          session.title === "Lunch Break" ||
-          session.title === "Afternoon Coffee" ||
-          session.title === "Spotlight Demos" ||
-          session.title === "Spotlight Talks"
+          session.title === "主题演讲" ||
+          session.title === "午餐" ||
+          session.title === "下午茶歇" ||
+          session.title === "展示与分享"
       }))
 )
 
@@ -94,11 +92,9 @@ const getEventUrl = (title: string): string => {
   // Get the current URL origin (domain)
   const origin = Astro.url.origin;
   // Create the full URL with domain
-  return `${origin}/schedule/${title.toLowerCase().replace(/\s+/g, "-")}/`;
+  return `${origin}/cn/agenda/${title.toLowerCase().replace(/\s+/g, "-")}/`;
 }
 ---
-
-
 
 <section
   class="section section-agenda-grid"
@@ -137,7 +133,6 @@ const getEventUrl = (title: string): string => {
                       </div>
                       <h2 class="h5">{session.title}</h2>
                     </div>
-
                   </div>
                   {(session.speakers.length > 0 || session.content) && (
                     <div class="bottom">
@@ -201,7 +196,7 @@ const getEventUrl = (title: string): string => {
                             <!-- Social share component with reduced spacing -->
                             <div class="social-share-row">
                               <SocialShare 
-                                title={`${session.title} - Open for SDG 2025`}
+                                title={`${session.title} - 开放共创·可持续发展大会 2025`}
                                 url={getEventUrl(session.title)}
                                 description={session.content ? session.content.replace(/<[^>]*>/g, "").substring(0, 160) : ""}
                               />
@@ -215,11 +210,12 @@ const getEventUrl = (title: string): string => {
               ))}
             </ul>
           ) : (
-            <p>No sessions available for this day</p>
+            <p>当天没有安排会议</p>
           )
         }
-      <p style="text-align: center;  margin: 1rem 0;">
-        Schedules are subject to change
+      </div>
+      <p style="text-align: center; margin: 1rem 0;">
+        议程如有变动，恕不另行通知
       </p>
     </div>
   </div>

@@ -1,8 +1,7 @@
 ---
 // Components
 import Layout from "layouts/Layout.astro";
-import Intro from "components/Intro.astro";
-import Agenda from "components/Agenda.astro";
+import Schedules from 'components/Schedules.astro';
 import Cards from "components/Cards.astro";
 ---
 
@@ -13,116 +12,7 @@ import Cards from "components/Cards.astro";
   navBackground="header-home"
   pageTransitionName="Conference Agenda"
 >
-  <Agenda
-    title="Sept 13, 2025 - Conference Schedule"
-    list={[
-      {
-        title: "10:10–10:50 | Opening Keynote Session",
-        markdown: `
-      - **Welcome Speech (20 min):** Prof. Tiejun Huang (Professor from Peking University, Chairman of BAAI)
-      - **Opening Keynote (20 min):** Dr. Mehdi Snene (Chief AI Officer at UN ODET)
-
-      *The opening session sets the stage for a day of exploration into how open technologies can drive sustainable development globally.*
-        `,
-      },
-      {
-        title: "10:50–11:50 | Open Data for the UN SDGs",
-        markdown: `
-        - **Panel Discussion (60 min)**
-
-            - **Moderator:** Yonghua Lin (VP and Chief Engineer at BAAI)
-            - **Panelists:**
-                - Nicolas Flores Herr (Team Lead Foundation Models & Gen AI Systems, Fraunhofer IAIS)
-                - Joaquin Salvachua (Professor at Universidad Politécnica de Madrid, ML-OPS & Big Data expert)
-                - Johann Diedrick (Mozilla Leading Scientist, Open Data Initiative at Mozilla)
-                - Richard Bian (Director of Strategy and New Product (OSS), Ant Group)
-
-*Exploring how open data initiatives can accelerate progress toward the UN SDGs through improved data sharing and collaboration.*
-        `,
-      },
-      {
-        title: "11:50–12:10 | Show & Tell #1 & #2",
-        markdown: `
-      - **Show & Tell #1 (10 min)**
-      - **Show & Tell #2 (10 min)**
-        `,
-      },
-      {
-        title: "12:10–14:00 | Lunch Break",
-        markdown: `
-Lunch and Networking
-        `,
-      },
-      {
-        title: "14:00–15:00 | Open Policy for the UN SDGs",
-        markdown: `
-- **Panel Discussion (60 min)**
-
-    - **Moderator:** Anni Lai (Co-Chair, Generative AI Commons)
-    - **Panelists:**
-        - Nooman Fehri (Former Digital and Technology Minister, Tunisia)
-        - Vincent Caldeira (CTO of Red Hat APAC, Top 10 CTO in APAC 2023)
-        - Matt White (Executive Director, PyTorch Foundation)
-        - Liyun Yang (Mulan Community - Open Source Policy Strategy for China Government)
-        - Yong Qin (Prof., Nankai Univeristy)
-
-*Discussing governance models, contribution pathways, policy and legal considerations, and alignment mechanisms for UN engagement with open source communities.*
-        `,
-      },
-      {
-        title: "15:10–15:20 | Show & Tell #3",
-        markdown: `
-      - **Show & Tell #3 (10 min)**
-        `,
-      },
-      {
-        title: "15:20–15:40 | Afternoon Break",
-        markdown: `
-Networking and Refreshments
-        `,
-      },
-      {
-        title: "15:40–16:40 | Open Science for the UN SDGs",
-        markdown: `
-- **Panel Discussion (60 min)**
-
-    - **Moderator:** Alexy Khrabrov (AI/ML Community Architect, Neo4j)
-    - **Panelists:**
-        - Dr. Minghui Zhou (Tenured Full Professor and Vice Dean, School of Computer Science, Peking University)
-        - Mohamed Farahat (Former UNSG HLAB member, Legal Expert with UNESCO)
-        - Walid Mathlouthi (Head of Infrastructure Division, ITU)
-        - Xinwei Hu (Chair of the openEuler Community Technical Committee, Huawei)
-        - Yonghua Lin (VP and Chief Engineer at BAAI)
-
-*Exploring how Open Science principles can accelerate progress toward UN SDGs through transparency, collaboration, and accessibility. Focus on barriers, enablers, cross-border collaboration, and ethical considerations.*
-        `,
-      },
-      {
-        title: "16:40–17:40 | Future AI for the UN SDGs",
-        markdown: `
-- **Panel Discussion (60 min)**
-
-    - **Moderator:** Bryan Che (Board Member, Eclipse Foundation and LF CNCF)
-    - **Panelists:**
-        - Prof. Kai Du (Assistant Professor, Psychology & Cognitive Science, Tsinghua University)
-        - Prof. Yin Peng (Assistant Professor, Department of Data Science, CUHK)
-        - Dr. Satya Mallick (CEO of OpenCV.org, AI & Computer Vision Expert)
-        - Weijie Sun (Founder & CEO at DP Technology - AI for Science)
-
-*Envisioning the future of AI in sustainable development context. Focus on inclusive and equitable AI futures, bridging innovation with impact, and promoting multistakeholder collaboration.*
-        `,
-      },
-      {
-        title: "17:40–18:00 | Closing Session",
-        markdown: `
-- Synthesis and Key Takeaways
-- Call to Action and Next Steps
-
-*Summarizing insights from the conference and outlining concrete actions for advancing open collaboration for UN SDGs.*
-        `,
-      },
-    ]}
-  />
+  <Schedules currentDay="Sept 13" activeCategory="All" />
 
   <Cards
     title="Session Formats"

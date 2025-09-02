@@ -243,6 +243,46 @@
       "roleOrg": "Staff Engineer & Data Scientist， Mozilla Data Collective",
       "image": "johann-diedrick.jpg",
       "tag": "open-for-sdg"
+    },
+    {
+      "id": "yin-peng",
+      "name": "Yin Peng",
+      "bio": "Assistant Professor in the Department of Data Science at the Chinese University of Hong Kong (CUHK).",
+      "role": "Assistant Professor",
+      "org": "CUHK",
+      "roleOrg": "Assistant Professor, Department of Data Science, CUHK",
+      "image": "0-placeholder-person.png",
+      "tag": "open-for-sdg"
+    },
+    {
+      "id": "weijie-sun",
+      "name": "Weijie Sun",
+      "bio": "Founder & CEO at DP Technology, focusing on AI for Science applications.",
+      "role": "Founder & CEO",
+      "org": "DP Technology",
+      "roleOrg": "Founder & CEO at DP Technology - AI for Science",
+      "image": "weijie-sun.png",
+      "tag": "open-for-sdg"
+    },
+    {
+      "id": "anni-lai",
+      "name": "Anni Lai",
+      "bio": "Co-Chair of the Generative AI Commons, focusing on open AI governance and policy.",
+      "role": "Co-Chair",
+      "org": "Generative AI Commons",
+      "roleOrg": "Co-Chair, Generative AI Commons",
+      "image": "anni-lai.png",
+      "tag": "open-for-sdg"
+    },
+    {
+      "id": "yong-qin",
+      "name": "Yong Qin",
+      "bio": "Professor at Nankai University.",
+      "role": "Professor",
+      "org": "Nankai University",
+      "roleOrg": "Prof., Nankai University",
+      "image": "yong-qin.png",
+      "tag": "open-for-sdg"
     }
   ]
 }
