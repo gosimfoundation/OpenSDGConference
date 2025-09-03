@@ -120,10 +120,37 @@
       },
       {
         "date": "Sept 13",
-        "timeSlot": "11:50 - 12:10",
-        "title": "Show & Tell #1 & #2",
-        "content": "<p><strong>Show & Tell #1 (10 min)</strong></p><p><strong>Show & Tell #2 (10 min)</strong></p>",
-        "speakers": []
+        "timeSlot": "11:50 - 12:00",
+        "title": "GitCode (Show & Tell #1)",
+        "content": "<p><strong>Show & Tell #1 (10 min)</strong></p><p>Bangxu Yu (SVP of CSDN & CEO of GitCode)</p>",
+        "speakers": [
+            {
+              "id": "bangxu-yu",
+              "name": "Bangxu Yu",
+              "tags": [
+                "keynote"
+              ],
+              "roleOrg": "SVP of CSDN & CEO of GitCode",
+              "image": "0-placeholder-person.png"
+            }
+        ]
+      },
+      {
+        "date": "Sept 13",
+        "timeSlot": "12:00 - 12:10",
+        "title": "Intelligence BooM AI Open-Source Foundational Software Enables Collaborative Ecosystem Building (Show & Tell #2)",
+        "content": "<p><strong>Show & Tell #2 (10 min)</strong></p><p>Xinwei Hu (Chair of the openEuler Community Technical Committee)</p><p><em>Exploring how open-source foundational software can enable collaborative ecosystem building for AI development.</em></p>",
+        "speakers": [
+          {
+            "id": "xinwei-hu",
+            "name": "Xinwei Hu",
+            "tags": [
+              "keynote"
+            ],
+            "roleOrg": "Chair of the openEuler Community Technical Committee",
+            "image": "xinwei-hu.jpeg"
+          }
+        ]
       },
       {
         "date": "Sept 13",
@@ -188,8 +215,8 @@
       {
         "date": "Sept 13",
         "timeSlot": "15:10 - 15:20",
-        "title": "Show & Tell #3",
-        "content": "<p><strong>Show & Tell #3 (10 min)</strong></p>",
+        "title": "Ant Group (Show & Tell #3)",
+        "content": "<p><strong>Show & Tell #3 (10 min)</strong></p><p>ESG Report: Reflections and Inspirations</p>",
         "speakers": []
       },
       {
@@ -201,9 +228,9 @@
       },
       {
         "date": "Sept 13",
-        "timeSlot": "15:40 - 16:20",
+        "timeSlot": "15:40 - 16:40",
         "title": "Open Science for the UN SDGs",
-        "content": "<p><strong>Panel Discussion (40 min)</strong></p><p><strong>Moderator:</strong> Alexy Khrabrov (AI/ML Community Architect, Neo4j)</p><p><strong>Panelists:</strong></p><ul><li>Dr. Minghui Zhou (Tenured Full Professor and Vice Dean, School of Computer Science, Peking University)</li><li>Mohamed Farahat (Former UNSG HLAB member, Legal Expert with UNESCO)</li><li>Walid Mathlouthi (Head of Infrastructure Division, ITU)</li><li>Xinwei Hu (Chair of the openEuler Community Technical Committee, Huawei)</li><li>Yonghua Lin (VP and Chief Engineer at BAAI)</li></ul><p><em>Exploring how Open Science principles can accelerate progress toward UN SDGs through transparency, collaboration, and accessibility. Focus on barriers, enablers, cross-border collaboration, and ethical considerations.</em></p>",
+        "content": "<p><strong>Panel Discussion (60 min)</strong></p><p><strong>Moderator:</strong> Alexy Khrabrov (AI/ML Community Architect, Neo4j)</p><p><strong>Panelists:</strong></p><ul><li>Dr. Minghui Zhou (Tenured Full Professor and Vice Dean, School of Computer Science, Peking University)</li><li>Mohamed Farahat (Former UNSG HLAB member, Legal Expert with UNESCO)</li><li>Walid Mathlouthi (Head of Infrastructure Division, ITU)</li><li>Xinwei Hu (Chair of the openEuler Community Technical Committee, Huawei)</li><li>Yonghua Lin (VP and Chief Engineer at BAAI)</li></ul><p><em>Exploring how Open Science principles can accelerate progress toward UN SDGs through transparency, collaboration, and accessibility. Focus on barriers, enablers, cross-border collaboration, and ethical considerations.</em></p>",
         "speakers": [
           {
             "id": "alexy-khrabrov-",
@@ -263,43 +290,9 @@
       },
       {
         "date": "Sept 13",
-        "timeSlot": "16:20 - 16:30",
-        "title": "Intelligence BooM AI Open-Source Foundational Software Enables Collaborative Ecosystem Building",
-        "content": "<p><strong>Solo Presentation (10 min)</strong></p><p>Xinwei Hu (Chair of the openEuler Community Technical Committee)</p><p><em>Exploring how open-source foundational software can enable collaborative ecosystem building for AI development.</em></p>",
-        "speakers": [
-          {
-            "id": "xinwei-hu",
-            "name": "Xinwei Hu",
-            "tags": [
-              "keynote"
-            ],
-            "roleOrg": "Chair of the openEuler Community Technical Committee",
-            "image": "xinwei-hu.jpeg"
-          }
-        ]
-      },
-      {
-        "date": "Sept 13",
-        "timeSlot": "16:30 - 16:40",
-        "title": "TBD",
-        "content": "<p><strong>Solo Presentation (10 min)</strong></p><p>Yonghua Lin (VP and Chief Engineer at BAAI)</p><p><em>Topic and content to be determined.</em></p>",
-        "speakers": [
-          {
-            "id": "yonghua-lin",
-            "name": "Yonghua Lin",
-            "tags": [
-              "keynote"
-            ],
-            "roleOrg": "VP and Chief Engineer at BAAI",
-            "image": "yonghua-lin.jpg"
-          }
-        ]
-      },
-      {
-        "date": "Sept 13",
         "timeSlot": "16:40 - 17:40",
         "title": "Future AI for the UN SDGs",
-        "content": "<p><strong>Panel Discussion (60 min)</strong></p><p><strong>Moderator:</strong> Bryan Che (Board Member, Eclipse Foundation and LF CNCF)</p><p><strong>Panelists:</strong></p><ul><li>Prof. Kai Du (Assistant Professor, Psychology & Cognitive Science, Tsinghua University)</li><li>Prof. Yin Peng (Assistant Professor, Department of Data Science, CUHK)</li><li>Dr. Satya Mallick (CEO of OpenCV.org, AI & Computer Vision Expert)</li><li>Weijie Sun (Founder & CEO at DP Technology - AI for Science)</li></ul><p><em>Envisioning the future of AI in sustainable development context. Focus on inclusive and equitable AI futures, bridging innovation with impact, and promoting multistakeholder collaboration.</em></p>",
+        "content": "<p><strong>Panel Discussion (60 min)</strong></p><p><strong>Moderator:</strong> Bryan Che (Board Member, Eclipse Foundation and LF CNCF)</p><p><strong>Panelists:</strong></p><ul><li>Prof. Kai Du (Assistant Professor, Psychology & Cognitive Science, Tsinghua University)</li><li>Prof. Yin Peng (Assistant Professor, Department of Data Science, CUHK)</li><li>Dr. Satya Mallick (CEO of OpenCV.org, AI & Computer Vision Expert)</li></ul><p><em>Envisioning the future of AI in sustainable development context. Focus on inclusive and equitable AI futures, bridging innovation with impact, and promoting multistakeholder collaboration.</em></p>",
         "speakers": [
           {
             "id": "bryan-che",
@@ -336,21 +329,19 @@
             ],
             "roleOrg": "Assistant Professor, Department of Data Science, CUHK",
             "image": "0-placeholder-person.png"
-          },
-          {
-            "id": "weijie-sun",
-            "name": "Weijie Sun",
-            "tags": [
-              "panel"
-            ],
-            "roleOrg": "Founder & CEO at DP Technology - AI for Science",
-            "image": "weijie-sun.png"
           }
         ]
       },
       {
         "date": "Sept 13",
-        "timeSlot": "17:40 - 18:00",
+        "timeSlot": "17:40 - 17:50",
+        "title": "OYMotion (Show & Tell #4)",
+        "content": "<p><strong>Show & Tell #4 (10 min)</strong></p><p>Myoelectric Prosthetics, Dexterous Hands</p>",
+        "speakers": []
+      },
+      {
+        "date": "Sept 13",
+        "timeSlot": "17:50 - 18:00",
         "title": "Closing Session",
         "content": "<p><strong>Synthesis and Key Takeaways</strong></p><p><strong>Call to Action and Next Steps</strong></p><p><em>Summarizing insights from the conference and outlining concrete actions for advancing open collaboration for UN SDGs.</em></p>",
         "speakers": []
@@ -358,3 +349,4 @@
     ]
   }
 }
+
