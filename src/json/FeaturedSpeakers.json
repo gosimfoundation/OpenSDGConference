@@ -51,6 +51,10 @@
     {
       "name": "AI Vision Forum",
       "id": "forum-aivision"
+    },
+    {
+      "name": "Globalization Workshop",
+      "id": "ws-globalization"
     }
   ],
   "speakers": [
@@ -282,6 +286,16 @@
       "org": "Nankai University",
       "roleOrg": "Prof., Nankai University",
       "image": "yong-qin.png",
+      "tag": "open-for-sdg"
+    },
+    {
+      "id": "adina-yakefu",
+      "name": "Adina Yakefu",
+      "bio": "Working at Hugging Face | Advocate for diversity & open-source AI.",
+      "role": "EA / AI researcher",
+      "org": "Hugging Face",
+      "roleOrg": "EA / AI researcher, Hugging Face",
+      "image": "adina-yakefu.png",
       "tag": "open-for-sdg"
     }
   ]
