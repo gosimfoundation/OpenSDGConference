@@ -319,7 +319,7 @@
         "date": "9月13日",
         "timeSlot": "16:40 - 17:40",
         "title": "Future AI 未来人工智能促进联合国可持续发展目标",
-        "content": "<p><strong>小组讨论 (60分钟)</strong></p><p><strong>主持人:</strong> Bryan Che (Eclipse基金会和LF CNCF董事会成员)</p><p><strong>讨论嘉宾:</strong></p><ul><li>杜凯 (清华大学心理与认知科学系助理教授)</li><li>殷鹏 (香港中文大学数据科学学院助理教授)</li><li>Dr. Satya Mallick (OpenCV.org 首席执行官，AI 与计算机视觉专家，AI与计算机视觉专家)</li><li>Adina Yakefu (Hugging Face EA / AI研究员)</li></ul><p><em>展望AI在可持续发展背景下的未来。重点关注包容性和公平的AI未来，连接创新与影响，促进多方利益相关者协作。</em></p>",
+        "content": "<p><strong>小组讨论 (60分钟)</strong></p><p><strong>主持人:</strong> Bryan Che (Eclipse基金会和LF CNCF董事会成员)</p><p><strong>讨论嘉宾:</strong></p><ul><li>杜凯 (清华大学心理与认知科学系助理教授)</li><li>殷鹏 (香港中文大学数据科学学院助理教授)</li><li>Dr. Satya Mallick (OpenCV.org 首席执行官，AI 与计算机视觉专家，AI与计算机视觉专家)</li><li>Adina Yakefu (Hugging Face EA / AI研究员)</li><li>Serge Stinckwich (联合国大学澳门研究所研究负责人)</ul><p><em>展望AI在可持续发展背景下的未来。重点关注包容性和公平的AI未来，连接创新与影响，促进多方利益相关者协作。</em></p>",
         "speakers": [
           {
             "id": "bryan-che",
@@ -337,7 +337,7 @@
               "open-for-sdg"
             ],
             "roleOrg": "清华大学心理与认知科学系助理教授",
-            "image": "0-placeholder-person.png"
+            "image": "kai-du.jpg"
           },
           {
             "id": "satya-mallick",
@@ -365,6 +365,15 @@
             ],
             "roleOrg": "Hugging Face EA / AI研究员",
             "image": "adina-yakefu.png"
+          },
+                    {
+            "id": "serge-stinckwich",
+            "name": "Serge Stinckwich",
+            "tags": [
+              "open-for-sdg"
+            ],
+            "roleOrg": "研究负责人，联合国大学澳门研究所",
+            "image": "serge-stinckwich.png"
           }
         ]
       },

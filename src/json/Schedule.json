@@ -319,7 +319,7 @@
         "date": "September 13",
         "timeSlot": "16:40 - 17:40",
         "title": "Future AI for the UN SDGs",
-        "content": "<p><strong>Panel Discussion (60 min)</strong></p><p><strong>Moderator:</strong> Bryan Che (Board Member, Eclipse Foundation and LF CNCF)</p><p><strong>Panelists:</strong></p><ul><li>Prof. Kai Du (Assistant Professor, Psychology & Cognitive Science, Tsinghua University)</li><li>Prof. Yin Peng (Assistant Professor, Department of Data Science, CUHK)</li><li>Dr. Satya Mallick (CEO of OpenCV.org, AI & Computer Vision Expert)</li><li>Adina Yakefu (EA / AI researcher, Hugging Face)</li></ul><p><em>Envisioning the future of AI in sustainable development context. Focus on inclusive and equitable AI futures, bridging innovation with impact, and promoting multistakeholder collaboration.</em></p>",
+        "content": "<p><strong>Panel Discussion (60 min)</strong></p><p><strong>Moderator:</strong> Bryan Che (Board Member, Eclipse Foundation and LF CNCF)</p><p><strong>Panelists:</strong></p><ul><li>Prof. Kai Du (Assistant Professor, Psychology & Cognitive Science, Tsinghua University)</li><li>Prof. Yin Peng (Assistant Professor, Department of Data Science, CUHK)</li><li>Dr. Satya Mallick (CEO of OpenCV.org, AI & Computer Vision Expert)</li><li>Adina Yakefu (EA / AI researcher, Hugging Face)</li><li>Serge Stinckwich (Head of Research, United Nations University Institute in Macau)</li></ul><p><em>Envisioning the future of AI in sustainable development context. Focus on inclusive and equitable AI futures, bridging innovation with impact, and promoting multistakeholder collaboration.</em></p>",
         "speakers": [
           {
             "id": "bryan-che",
@@ -337,7 +337,7 @@
               "open-for-sdg"
             ],
             "roleOrg": "Assistant Professor, Psychology & Cognitive Science, Tsinghua University",
-            "image": "0-placeholder-person.png"
+            "image": "kai-du.jpg"
           },
           {
             "id": "satya-mallick",
@@ -365,6 +365,15 @@
             ],
             "roleOrg": "EA / AI researcher, Hugging Face",
             "image": "adina-yakefu.png"
+          },
+          {
+            "id": "serge-stinckwich",
+            "name": "Serge Stinckwich",
+            "tags": [
+              "open-for-sdg"
+            ],
+            "roleOrg": "Head of Research, United Nations University Institute in Macau",
+            "image": "serge-stinckwich.png"
           }
         ]
       },
