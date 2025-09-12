@@ -163,7 +163,7 @@
         "date": "9月13日",
         "timeSlot": "14:00 - 15:00",
         "title": "Open Policy 开放政策促进联合国可持续发展目标",
-        "content": "<p><strong>小组讨论 (60分钟)</strong></p><p><strong>主持人:</strong> Anni Lai (生成式AI共同体联合主席)</p><p><strong>讨论嘉宾:</strong></p><ul><li>Nooman Fehri (突尼斯前数字技术部长)</li><li>Vincent Caldeira (红帽亚太区首席技术官，2023 年亚太区十大 CTO，2023年亚太区十大CTO)</li><li>Matt White (PyTorch基金会执行董事)</li><li>杨丽蕴 (木兰社区 - 中国政府开源政策战略)</li></ul><p><em>讨论联合国参与开源社区的治理模式、贡献路径、政策与法律考量，以及协调机制。</em></p>",
+        "content": "<p><strong>小组讨论 (60分钟)</strong></p><p><strong>主持人:</strong> Anni Lai (生成式AI共同体联合主席)</p><p><strong>讨论嘉宾:</strong></p><ul><li>Nooman Fehri (突尼斯前数字技术部长)</li><li>Vincent Caldeira (红帽亚太区首席技术官，2023 年亚太区十大 CTO，2023年亚太区十大CTO)</li><li>Matt White (PyTorch基金会执行董事)</li><li>林旅强 (开源社联合创始人，RTE开发者社区主理人)</li><li>杨丽蕴 (木兰社区 - 中国政府开源政策战略)</li></ul><p><em>讨论联合国参与开源社区的治理模式、贡献路径、政策与法律考量，以及协调机制。</em></p>",
         "speakers": [
           {
             "id": "anni-lai",
@@ -200,6 +200,15 @@
             ],
             "roleOrg": "PyTorch基金会执行董事",
             "image": "matt-white.png"
+          },
+          {
+            "id": "richard-lin",
+            "name": "林旅强",
+            "tags": [
+              "open-for-sdg"
+            ],
+            "roleOrg": "开源社联合创始人，RTE开发者社区主理人",
+            "image": "richard-lin.png"
           },
           {
             "id": "liyun-yang",

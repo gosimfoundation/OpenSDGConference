@@ -163,7 +163,7 @@
         "date": "September 13",
         "timeSlot": "14:00 - 15:00",
         "title": "Open Policy for the UN SDGs",
-        "content": "<p><strong>Panel Discussion (60 min)</strong></p><p><strong>Moderator:</strong> Anni Lai (Co-Chair, Generative AI Commons)</p><p><strong>Panelists:</strong></p><ul><li>Nooman Fehri (Former Digital and Technology Minister, Tunisia)</li><li>Vincent Caldeira (CTO of Red Hat APAC, Top 10 CTO in APAC 2023)</li><li>Matt White (Executive Director, PyTorch Foundation)</li><li>Liyun Yang (Mulan Community - Open Source Policy Strategy for China Government)</li></ul><p><em>Discussing governance models, contribution pathways, policy and legal considerations, and alignment mechanisms for UN engagement with open source communities.</em></p>",
+        "content": "<p><strong>Panel Discussion (60 min)</strong></p><p><strong>Moderator:</strong> Anni Lai (Co-Chair, Generative AI Commons)</p><p><strong>Panelists:</strong></p><ul><li>Nooman Fehri (Former Digital and Technology Minister, Tunisia)</li><li>Vincent Caldeira (CTO of Red Hat APAC, Top 10 CTO in APAC 2023)</li><li>Matt White (Executive Director, PyTorch Foundation)</li><li>Richard Lin (Co-founder of Kaiyuanshe, Head of the RTE Developer Community)</li><li>Liyun Yang (Mulan Community - Open Source Policy Strategy for China Government)</li></ul><p><em>Discussing governance models, contribution pathways, policy and legal considerations, and alignment mechanisms for UN engagement with open source communities.</em></p>",
         "speakers": [
           {
             "id": "anni-lai",
@@ -200,6 +200,15 @@
             ],
             "roleOrg": "GM of AI/Executive Director, Linux Foundation/PyTorch Foundation",
             "image": "matt-white.png"
+          },
+          {
+            "id": "richard-lin",
+            "name": "Richard Lin",
+            "tags": [
+              "open-for-sdg"
+            ],
+            "roleOrg": "Co-founder of Kaiyuanshe, Head of the RTE Developer Community",
+            "image": "richard-lin.png"
           },
           {
             "id": "liyun-yang",
