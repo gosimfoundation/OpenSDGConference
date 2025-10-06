@@ -16,7 +16,7 @@ const { date, location, links } = Astro.props;
 
 // Detect if we're on a Chinese page
 const isChinese = Astro.url.pathname.startsWith('/cn/');
-const title = isChinese ? '开放共创·可持续发展大会（活动已结束，感谢参与）' : 'Open for SDG Conference \n (The event has ended, thanks for attending)';
+const title = isChinese ? '开放共创·可持续发展大会' : 'Open for SDG Conference \n ';
 ---
 
 <section
